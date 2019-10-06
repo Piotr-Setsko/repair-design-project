@@ -1,0 +1,7 @@
+.page__wrapper {
+  @include wrapper($desktop-wrapper);
+}
+
+.page__header {
+  background-color: #131313;
+}

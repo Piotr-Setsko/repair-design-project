@@ -1,0 +1,15 @@
+.complete {
+  display: flex;
+  justify-content: flex-end;
+  background-color: $background;
+  min-height: 552px;
+}
+
+.complete__slider:first-child {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.complete__slider:last-child {
+  width: 59%;
+}

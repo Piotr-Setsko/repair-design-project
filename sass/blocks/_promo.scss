@@ -1,0 +1,29 @@
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #131313;
+}
+
+.promo__inst-wrapper {
+  display: flex;
+  align-items: center;
+  width: 6%;
+}
+
+.promo__inst-link {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.promo__wrapper {
+  width: 94%;
+  min-height: 707px;
+  background-color: #ffffff;
+}
+
+.promo__down-link {
+  width: 247px;
+  height: 97px;
+  text-align: center;
+  background-color: #131313;
+}
