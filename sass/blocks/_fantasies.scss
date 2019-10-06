@@ -1,0 +1,11 @@
+.fantasies {
+  min-height: 1018px;
+}
+
+.fantasies__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.fantasies__list {
+  @include reset();
+}

@@ -27,6 +27,43 @@
   min-height: 955px;
 }
 
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fantasies {
+  min-height: 1018px;
+}
+
+.fantasies__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fantasies__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features {
+  display: flex;
+  min-height: 726px;
+}
+
+.features__circle {
+  width: 54%;
+}
+
+.features__discount {
+  margin: 0 auto;
+  width: 35%;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -41,6 +78,12 @@
 
 .page__header {
   background-color: #131313;
+}
+
+.project {
+  margin: 0 auto;
+  max-width: 86%;
+  min-height: 922px;
 }
 
 .promo {
@@ -90,9 +133,10 @@ img {
   height: auto;
 }
 
+/*
 .visually-hidden,
-input[type="checkbox"],
-input[type="radio"] {
+  input[type="checkbox"],
+  input[type="radio"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -104,10 +148,14 @@ input[type="radio"] {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+*/
 .site-list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.types {
+  min-height: 690px;
 }
