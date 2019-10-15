@@ -2,3 +2,30 @@
   display: flex;
   @include reset();
 }
+
+.contact-list__link--phone {
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  @include font(1vw);
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+}
+
+.contact-list__item {
+  &:last-child {
+    margin-left: 4vw;
+  }
+}
+
+.contact-list__link {
+  padding: 11px 33px;
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  @include font(0.9vw, $style: italic);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.button-submit {
+  border-radius: 2px;
+  background-color: #E3B873;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, .30);
+}

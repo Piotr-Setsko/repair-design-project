@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "FuturaDemiC";
+  font-style: normal;
+  src: url("../assets/fonts/FuturaDemiC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FuturaDemiC";
+  font-style: italic;
+  src: url("../assets/fonts/FuturaDemiC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../assets/fonts/FuturaBookC.ttf") format("truetype");
+}
+
 html {
   overflow-x: hidden;
 }
@@ -14,6 +31,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+a {
+  text-decoration: none;;
+}
+
 /*
 .visually-hidden,
   input[type="checkbox"],

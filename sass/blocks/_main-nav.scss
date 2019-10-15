@@ -4,3 +4,10 @@
   align-items: center;
   min-height: 83px;
 }
+
+.main-nav__logo {
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  @include font(14px);
+  color: #E3B873;
+  text-transform: uppercase;
+}

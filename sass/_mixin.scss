@@ -1,7 +1,8 @@
-@mixin font($size: 14px, $line-height: 22px, $weight: normal) {
+@mixin font($size: 14px, $line-height: 1.2, $weight: normal, $style: normal) {
   font-size: $size;
   line-height: $line-height;
   font-weight: $weight;
+  font-style: $style;
 }
 
 @mixin reset() {
@@ -9,6 +10,7 @@
   padding: 0;
   list-style: none;
 }
+
 @mixin wrapper($width) {
   margin: 0 auto;
   max-width: $width;
