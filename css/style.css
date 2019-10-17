@@ -15,6 +15,11 @@
   src: url("../assets/fonts/FuturaBookC.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../assets/fonts/YesevaOne-Regular.ttf") format("truetype");
+}
+
 html {
   overflow-x: hidden;
 }
@@ -194,14 +199,52 @@ a {
 }
 
 .promo__inst-link {
+  position: relative;
   display: inline-block;
   transform: rotate(90deg);
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: normal;
+  font-style: normal;
+  color: #E3B873;
+}
+
+.promo__inst-link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: -65px;
+  height: 2px;
+  width: 50px;
+  background-color: #E3B873;
 }
 
 .promo__wrapper {
+  display: flex;
   width: 94%;
   min-height: 707px;
   background-color: #ffffff;
+  background-image: url(../assets/images/promo-background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__inner-wrapper {
+  margin-left: 60px;
+  margin-top: 160px;
+  width: 530px;
+}
+
+.promo__title {
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .promo__down-link {
