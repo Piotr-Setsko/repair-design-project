@@ -1,0 +1,20 @@
+.title__article {
+  position: relative;
+  @include reset;
+  width: 240px;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(27px,1.4);
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.title__article::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -30px;
+  bottom: 18px;
+  height: 1.5px;
+  width: 92px;
+  background-color: $main-color;
+}

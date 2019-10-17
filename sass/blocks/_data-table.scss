@@ -1,0 +1,20 @@
+.data-table {
+  margin-top: 50px;
+}
+
+.data-table__name {
+  width: 200px;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  text-align: start;
+  @include font(18px,1.4);
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.data-table__text {
+  padding-bottom: 40px;
+  vertical-align: top;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(15px,1.4);
+  color: $text-color;
+}

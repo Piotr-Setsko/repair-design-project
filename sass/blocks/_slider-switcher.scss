@@ -1,0 +1,49 @@
+.slider-switcher {
+  display: flex;
+}
+
+.slider-switcher__arrow {
+  position: relative;
+  border: none;
+  width: 40px;
+  height: 1px;
+  background-color: $text-color;
+}
+
+.arrow_left::before {
+  content:"";
+  position: absolute;
+  left:-1px;
+  top: -3px;
+  border: solid $text-color;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+}
+
+.arrow_right::before {
+  content:"";
+  position: absolute;
+  right:-1px;
+  top: -3px;
+  border: solid $text-color;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.slider-switcher__label-radio {
+  //position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: $text-color;
+}
+
+.slider-switcher__label-radio::before {
+  content: "";
+  position: absolute;
+
+
+}

@@ -2,9 +2,11 @@
 @import "variables";
 @import "blocks/scaffolding";
 
+@import "blocks/button-submit";
 @import "blocks/complete";
 @import "blocks/contact-list";
 @import "blocks/control";
+@import "blocks/data-table";
 @import "blocks/example";
 @import "blocks/fantasies";
 @import "blocks/features";
@@ -13,4 +15,6 @@
 @import "blocks/project";
 @import "blocks/promo";
 @import "blocks/site-list";
+@import "blocks/slider-switcher";
+@import "blocks/title";
 @import "blocks/types";

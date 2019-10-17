@@ -1,0 +1,16 @@
+.button-submit {
+  display: inline-block;
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  @include font(13px, $style: italic);
+  color: #ffffff;
+  border-radius: 2px;
+  background-color: #E3B873;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, .30);
+
+  &--transp {
+    margin-left: 20px;;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

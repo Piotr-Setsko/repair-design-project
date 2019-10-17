@@ -1,7 +1,7 @@
 .promo {
   display: flex;
   flex-wrap: wrap;
-  background-color: #131313;
+  background-color: $background;
 }
 
 .promo__inst-wrapper {
@@ -14,27 +14,28 @@
   position: relative;
   display: inline-block;
   transform: rotate(90deg);
+  margin-top: -150px;
   font-family: "FuturaDemiC", Arial, sans-serif;
   @include font(14px);
-  color: #E3B873;
+  color: $main-color;
 }
 
 .promo__inst-link::after {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 8px;
+  top: 6px;
   right: -65px;
   height: 2px;
   width: 50px;
-  background-color: #E3B873;
+  background-color: $main-color;
 }
 
 .promo__wrapper {
   display: flex;
   width: 94%;
   min-height: 707px;
-  background-color: #ffffff;
+  background-color: $text-color;
   background-image: url(../assets/images/promo-background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,20 +43,71 @@
 
 .promo__inner-wrapper {
   margin-left: 60px;
-  margin-top: 160px;
+  margin-top: 185px;
   width: 530px;
 }
 
 .promo__title {
+  @include reset;
   font-family: "YesevaOne", "Comic Sans", cursive;
   @include font(40px,1.4);
-  color: #ffffff;
+  color: $text-color;
   text-transform: uppercase;
+
+  &--color {
+    color: $main-color;
+  }
 }
 
-.promo__down-link {
+.promo__desc {
+  width: 450px;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(22px,1.4);
+  color: $text-color;
+}
+
+.promo__link {
+  padding: 17px 33px;
+}
+
+.promo__down {
+  margin-top: -50px;
   width: 247px;
   height: 97px;
   text-align: center;
-  background-color: #131313;
+  background-color: $background;
+}
+
+.promo__down-link {
+  position: relative;
+  display: inline-block;
+  margin-left: -40px;
+  padding-top: 40px;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(14px,1.4);
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+.promo__down-link::before {
+  content:"";
+  position: absolute;
+  top: 30px;
+  right: -50px;
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid $main-color;
+  border-radius: 50%;
+}
+
+
+.promo__down-link::after {
+  content:"";
+  position: absolute;
+  right: -38px;
+  border: solid $main-color;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
 }
