@@ -1,0 +1,54 @@
+.pict-slider__viewport {
+  position: relative;
+}
+
+.pict-slider__text-list {
+  display: flex;
+  @include reset;
+  justify-content: space-between;
+  width: 625px;
+}
+
+.pict-slider__text-link {
+  padding-bottom: 8px;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(14px,1.4);
+  color: $text-color;
+  opacity: 0.3;
+  text-transform: uppercase;
+
+  &--select {
+    color: $main-color;
+    opacity: 1;
+    border-bottom: 1px solid $main-color;
+  }
+}
+
+.pict-slider__img-list {
+  display: flex;
+  justify-content: space-between;
+  @include reset;
+  margin-top: 45px;
+}
+
+.pict-slider__button {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  width: 50px;
+  height: 50px;
+  background-color: $main-color;
+  border-radius: 50%;
+}
+
+.pict-slider__button::before {
+  content:"";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  border: solid $text-color;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(-45deg);
+}

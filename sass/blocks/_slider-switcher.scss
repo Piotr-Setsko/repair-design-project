@@ -1,20 +1,34 @@
 .slider-switcher {
   display: flex;
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
 .slider-switcher__arrow {
   position: relative;
-  border: none;
+  margin-top: -15px;
   width: 40px;
-  height: 1px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider-switcher__arrow::after {
+  content:"";
+  top: 15px;
+  left: 0px;
+  position: absolute;
+  width: 40px;
+  height: 1.3px;
   background-color: $text-color;
 }
 
 .arrow_left::before {
   content:"";
   position: absolute;
-  left:-1px;
-  top: -3px;
+  left: 0px;
+  top: 12px;
   border: solid $text-color;
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -25,8 +39,8 @@
 .arrow_right::before {
   content:"";
   position: absolute;
-  right:-1px;
-  top: -3px;
+  right: 0;
+  top: 12px;
   border: solid $text-color;
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -34,16 +48,21 @@
   transform: rotate(-45deg);
 }
 
-.slider-switcher__label-radio {
-  //position: relative;
-  width: 20px;
-  height: 20px;
-  background-color: $text-color;
+.slider-switcher__form {
+  margin: -10px 20px 0;
 }
 
-.slider-switcher__label-radio::before {
-  content: "";
-  position: absolute;
+.slider-switcher__label-radio {
+  margin: 0 7px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: $text-color;
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
 
-
+  &--active {
+    opacity: 1;
+  }
 }
