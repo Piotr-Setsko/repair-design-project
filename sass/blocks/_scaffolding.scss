@@ -16,6 +16,11 @@
 }
 
 @font-face {
+  font-family: "FuturaMedium";
+  src: url("../assets/fonts/FuturaMediumC-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "YesevaOne";
   src: url("../assets/fonts/YesevaOne-Regular.ttf") format("truetype");
 }
@@ -27,7 +32,7 @@ html {
 body {
   margin: 0 auto;
   padding: 0;
-  color: #000000;
+  color: $background;
   width: 100%;
   box-sizing: border-box;
 }

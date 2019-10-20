@@ -1,13 +1,97 @@
 .features {
   display: flex;
+  margin-top: 200px;
   min-height: 726px;
 }
 
 .features__circle {
-  width: 54%;
+  width: 60%;
+  background-image: url("../assets/images/features-background.png");
+  background-repeat: no-repeat;
+}
+
+.features__list {
+  @include reset;
+  margin-top: 120px;
+  margin-left: 410px;
+}
+
+.features__item {
+  position: relative;
+  font-family: "FuturaMedium", Arial, sans-serif;
+  @include font(18px);
+  color: $black-color;
+
+
+  &::before {
+    content:"";
+    position: absolute;
+    display: inline-block;
+    padding: 10px;
+    width: 21px;
+    height: 21px;
+    left: -60px;
+    top: 0px;
+    font-family: "YesevaOne", "Comic Sans", cursive;
+    @include font(18px,1.4);
+    color: $text-color;
+    background-color: $main-color;
+    border-radius: 50%;
+  }
+}
+
+.first-item{
+  margin-bottom: 75px;
+
+  &::before{
+    content: "01";
+  }
+}
+
+.second-item {
+  margin-left: 80px;
+  margin-bottom: 140px;
+
+  &::before{
+    content: "02";
+    top: -8px;
+  }
+}
+
+.third-item{
+  margin-left: 105px;
+  margin-bottom: 130px;
+
+  &::before{
+    content: "03";
+    top: -8px;
+  }
+}
+
+.four-item {
+  margin-left: 35px;
+
+  &::before{
+    content: "04";
+    top: 0;
+  }
 }
 
 .features__discount {
   margin: 0 auto;
   width: 35%;
+  background-color: $background;
+}
+
+.registr__field {
+  border: none;
+}
+
+.registr__legend {
+  text-align: center;
+  padding-top: 25px;
+  width: 290px;
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  @include font(20px);
+  color: $text-color;
 }

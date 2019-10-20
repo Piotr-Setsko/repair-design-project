@@ -2,4 +2,45 @@
   display: flex;
   justify-content: space-between;
   @include reset();
+  margin-top: 30px;
+}
+
+.example__pict {
+  position: relative;
+  z-index: -1;
+}
+
+.example__desc {
+  margin: 0 auto;
+  margin-top: -150px;
+  width: 85%;
+  background-color: $text-color;
+}
+
+.example__block-list {
+  @include reset;
+  margin-left: 50px;
+  margin-top: 10px;;
+  list-style-type: disc;
+}
+
+.example__block-item {
+  padding-bottom: 5px;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(15px,1.6);
+  color: #959595;
+}
+
+.example__block-link {
+  display: block;
+  margin-top: 20px;
+  padding: 15px 0;
+  text-align: center;
+  width: 70%;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(18px,1.4);
+  color: $text-color;
+  text-transform: uppercase;
+  background-color: $main-color;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, .30);
 }

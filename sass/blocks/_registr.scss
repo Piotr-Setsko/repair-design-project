@@ -1,0 +1,63 @@
+.registr__form {
+  text-align: center;
+}
+
+.registr__element {
+  position: relative;
+  display: inline-block;
+  margin-right: 10%;
+}
+
+.registr__input-text {
+  padding-bottom: 7px;
+  border: none;
+  border-bottom: 1px solid rgba(54,54,54, 0.3);
+
+  &::placeholder {
+    font-family: "FuturaBookC", Arial, sans-serif;
+    @include font(18px,1.4);
+    color: $black-color;
+  }
+}
+
+.registr__label-text {
+  position: absolute;
+  top: -20px;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(15px,1.4);
+  color: $black-color;
+  opacity: 0.5;
+}
+
+.registr__input-submit {
+  position: relative;
+  top: -5px;
+  padding: 13px 70px;
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  @include font(15px, 1.7);
+}
+
+.registr__input-checkbox + .registr__label-checkbox {
+  margin-top: 30px;
+  display: block;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(16px,1.4);
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 3px;
+    left: -10px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: $main-color;
+  }
+}
+
+.registr__input-checkbox:checked + .registr__label-checkbox::before {
+  width: 18px;
+  height: 18px;
+  background-image: url("../assets/images/checked.svg");background-repeat: no-repeat;
+  background-position: center center;
+}

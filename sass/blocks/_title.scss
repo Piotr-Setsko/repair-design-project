@@ -18,3 +18,43 @@
   width: 92px;
   background-color: $main-color;
 }
+
+
+.title__block {
+  position: relative;
+  text-align: center;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(20px,1.4);
+  text-transform: uppercase;
+}
+
+.title__symbol {
+  display: block;
+  margin: 0 auto;
+}
+
+.title__block::before,
+.title__block::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  width: 30px;
+  height: 1px;
+  background: $main-color;
+}
+
+.title__block::before {
+  margin-left: 25px;
+}
+
+.title__block::after {
+  margin-left: -50px;
+}
+
+.title__equal {
+  @include reset;
+  padding: 20px 0 0 30px;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(18px,1.4);
+  color: $black-color;
+}
