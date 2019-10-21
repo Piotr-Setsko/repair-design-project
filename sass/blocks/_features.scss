@@ -1,6 +1,6 @@
 .features {
   display: flex;
-  margin-top: 200px;
+  margin-top: 120px;
   min-height: 726px;
 }
 
@@ -79,19 +79,70 @@
 
 .features__discount {
   margin: 0 auto;
+  margin-top: 100px;
   width: 35%;
+}
+
+.features__wrapper {
   background-color: $background;
+  background-image: url("../assets/images/features-discount-bkg.png");
 }
 
-.registr__field {
+.features__input-text {
+  margin-bottom: 50px;
+  width: 100%;
+  font-family: "FuturaMedium", Arial, sans-serif;
+  @include font(18px, 1.4);
+  color: $text-color;
   border: none;
+  border-bottom-color: rgba(250,250,250, 0.15);
+
+  &::placeholder {
+    font-family: "FuturaMedium", Arial, sans-serif;
+    @include font(18px, 1.4);
+    color: $text-color;
+  }
 }
 
-.registr__legend {
-  text-align: center;
-  padding-top: 25px;
-  width: 290px;
+.features__label-text{
+  color: $text-color;
+}
+
+.features__label-checkbox {
+  margin-top: -35px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  color: $text-color;
+}
+
+.features__input-submit {
+  float: right;
+  margin-bottom: 20px;
+  padding: 13px 40px;
+  border-radius: 0;
+}
+
+.features__sale {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 50%;
   font-family: "FuturaDemiC", Arial, sans-serif;
   @include font(20px);
-  color: $text-color;
+  color: $main-color;
+}
+
+.features__sale::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: -10px;
+  left: -100px;
+  width: 72px;
+  height: 72px;
+  background-color: $main-color;
+  background-image: url("../assets/images/features-pig.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
 }

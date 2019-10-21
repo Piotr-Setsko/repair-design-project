@@ -1,11 +1,20 @@
 .fantasies {
+  margin-top: 300px;
   min-height: 1018px;
+  background-image: url("../assets/images/fantasies-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .fantasies__wrapper {
   display: flex;
   justify-content: space-between;
 }
+
+.fantasies__article {
+
+}
+
 .fantasies__list {
   @include reset();
 }

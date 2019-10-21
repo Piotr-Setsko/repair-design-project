@@ -1,9 +1,11 @@
 .complete {
   display: flex;
   justify-content: flex-end;
-  padding-top: 50px;
+  margin-top: -50px;
+  padding-top: 100px;
   background-color: $background;
   min-height: 952px;
+  background-image: url("../assets/images/complete-background.png");
 }
 
 .complete__slider:first-child {

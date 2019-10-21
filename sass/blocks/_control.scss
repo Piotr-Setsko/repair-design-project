@@ -40,4 +40,36 @@
 
 .control__form {
   margin-top: 90px;
+  text-align: center;
+}
+
+.control__input-text {
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(18px, 1.4);
+  color: $black-color;
+  border: none;
+  border-bottom-color: rgba(54,54,54, 0.3);
+
+  &::placeholder {
+    font-family: "FuturaBookC", Arial, sans-serif;
+    @include font(18px,1.4);
+    color: $black-color;
+  }
+}
+
+.control__label-text {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: $black-color;
+}
+
+.control__input-submit {
+  position: relative;
+  top: -5px;
+  padding: 13px 70px;
+}
+
+.control__label-checkbox {
+  margin-top: 30px;
 }

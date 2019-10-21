@@ -86,9 +86,11 @@ input[type="radio"] {
 .complete {
   display: flex;
   justify-content: flex-end;
-  padding-top: 50px;
+  margin-top: -50px;
+  padding-top: 100px;
   background-color: #131313;
   min-height: 952px;
+  background-image: url("../assets/images/complete-background.png");
 }
 
 .complete__slider:first-child {
@@ -186,6 +188,44 @@ input[type="radio"] {
 
 .control__form {
   margin-top: 90px;
+  text-align: center;
+}
+
+.control__input-text {
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  color: #363636;
+  border: none;
+  border-bottom-color: rgba(54, 54, 54, 0.3);
+}
+
+.control__input-text::placeholder {
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  color: #363636;
+}
+
+.control__label-text {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: #363636;
+}
+
+.control__input-submit {
+  position: relative;
+  top: -5px;
+  padding: 13px 70px;
+}
+
+.control__label-checkbox {
+  margin-top: 30px;
 }
 
 .data-table {
@@ -273,7 +313,11 @@ input[type="radio"] {
 }
 
 .fantasies {
+  margin-top: 300px;
   min-height: 1018px;
+  background-image: url("../assets/images/fantasies-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .fantasies__wrapper {
@@ -289,7 +333,7 @@ input[type="radio"] {
 
 .features {
   display: flex;
-  margin-top: 200px;
+  margin-top: 120px;
   min-height: 726px;
 }
 
@@ -375,24 +419,81 @@ input[type="radio"] {
 
 .features__discount {
   margin: 0 auto;
+  margin-top: 100px;
   width: 35%;
+}
+
+.features__wrapper {
   background-color: #131313;
+  background-image: url("../assets/images/features-discount-bkg.png");
 }
 
-.registr__field {
+.features__input-text {
+  margin-bottom: 50px;
+  width: 100%;
+  font-family: "FuturaMedium", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
   border: none;
+  border-bottom-color: rgba(250, 250, 250, 0.15);
 }
 
-.registr__legend {
-  text-align: center;
-  padding-top: 25px;
-  width: 290px;
+.features__input-text::placeholder {
+  font-family: "FuturaMedium", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.features__label-text {
+  color: #ffffff;
+}
+
+.features__label-checkbox {
+  margin-top: -35px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+.features__input-submit {
+  float: right;
+  margin-bottom: 20px;
+  padding: 13px 40px;
+  border-radius: 0;
+}
+
+.features__sale {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 50%;
   font-family: "FuturaDemiC", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.2;
   font-weight: normal;
   font-style: normal;
-  color: #ffffff;
+  color: #E3B873;
+}
+
+.features__sale::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: -10px;
+  left: -100px;
+  width: 72px;
+  height: 72px;
+  background-color: #E3B873;
+  background-image: url("../assets/images/features-pig.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
 }
 
 .main-nav {
@@ -616,10 +717,6 @@ input[type="radio"] {
   transform: rotate(45deg);
 }
 
-.registr__form {
-  text-align: center;
-}
-
 .registr__element {
   position: relative;
   display: inline-block;
@@ -627,45 +724,34 @@ input[type="radio"] {
 }
 
 .registr__input-text {
+  display: block;
   padding-bottom: 7px;
-  border: none;
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
-}
-
-.registr__input-text::placeholder {
-  font-family: "FuturaBookC", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.4;
-  font-weight: normal;
-  font-style: normal;
-  color: #363636;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  background-color: transparent;
 }
 
 .registr__label-text {
-  position: absolute;
-  top: -20px;
+  display: block;
+  margin-bottom: 5px;
   font-family: "FuturaBookC", Arial, sans-serif;
   font-size: 15px;
   line-height: 1.4;
   font-weight: normal;
   font-style: normal;
-  color: #363636;
   opacity: 0.5;
 }
 
 .registr__input-submit {
-  position: relative;
-  top: -5px;
-  padding: 13px 70px;
   font-family: "FuturaDemiC", Arial, sans-serif;
   font-size: 15px;
   line-height: 1.7;
   font-weight: normal;
   font-style: normal;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15);
 }
 
 .registr__input-checkbox + .registr__label-checkbox {
-  margin-top: 30px;
   display: block;
   font-family: "FuturaBookC", Arial, sans-serif;
   font-size: 16px;
@@ -691,6 +777,25 @@ input[type="radio"] {
   background-image: url("../assets/images/checked.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.registr__field {
+  margin: 0 auto;
+  width: 80%;
+  border: none;
+}
+
+.registr__legend {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  width: 290px;
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
 }
 
 @media (min-width: 375px) {

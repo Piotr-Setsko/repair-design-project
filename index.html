@@ -104,16 +104,16 @@
       <p class="control__desc">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!<br> Leave a request below and you will receive a link to the broadcast.</p>
       <form class="control__form registr__form" action="#" method="post">
         <div class="registr__element">
-        <label class="registr__label-text" for="user-name">Name</label>
-        <input class="registr__input-text" type="text" name="user-name" id="user-name" placeholder="What is your name:">
+        <label class="registr__label-text control__label-text" for="user-name">Name</label>
+        <input class="registr__input-text control__input-text" type="text" name="user-name" id="user-name" placeholder="What is your name:">
         </div>
         <div class="registr__element">
-        <label class="registr__label-text" for="phone-number">Phone</label>
-        <input class="registr__input-text" type="text" name="phone-number" id="phone-number" placeholder="Your phone number:">
+        <label class="registr__label-text control__label-text" for="phone-number">Phone</label>
+        <input class="registr__input-text control__input-text" type="text" name="phone-number" id="phone-number" placeholder="Your phone number:">
         </div>
-        <input class="registr__input-submit button-submit" type="submit" value="Submit">
+        <input class="registr__input-submit control__input-submit button-submit" type="submit" value="Submit">
         <input type="checkbox" class="registr__input-checkbox" name="agreement" id="agreement" checked>
-        <label class="registr__label-checkbox" for="agreement">I agree to the processing of personal data</label>
+        <label class="registr__label-checkbox control__label-checkbox" for="agreement">I agree to the processing of personal data</label>
       </form>
     </div>
     </section>
@@ -183,20 +183,22 @@
         </ul>
       </div>
       <div class="features__discount">
+        <div class="features__wrapper">
         <form class="features__form registr__form" action="#" method="post">
           <fieldset class="registr__field">
             <legend class="registr__legend">Leave a request for free departure of the measurer</legend>
-            <input class="registr__input-text" type="text" name="user-name" id="user-name-2" placeholder="What is your name:">
-            <label class="registr__label-text" for="user-name-2">Name</label>
-            <input class="registr__input-text" type="text" name="phone-number" id="phone-number-2" placeholder="Your phone number:">
-            <label class="registr__label-text" for="phone-number-2">Phone</label>
-            <input class="registr__input-text" type="text" name="user-mail" id="user-mail" placeholder="Your email">
-            <label class="registr__label-text" for="user-mail">Email</label>
+            <label class="registr__label-text features__label-text" for="user-name-2">Name</label>
+            <input class="registr__input-text features__input-text" type="text" name="user-name" id="user-name-2" placeholder="What is your name:">
+            <label class="registr__label-text features__label-text" for="phone-number-2">Phone</label>
+            <input class="registr__input-text features__input-text" type="text" name="phone-number" id="phone-number-2" placeholder="Your phone number:">
+            <label class="registr__label-text features__label-text" for="user-mail">Email</label>
+            <input class="registr__input-text features__input-text" type="text" name="user-mail" id="user-mail" placeholder="Your email">
             <input class="registr__input-checkbox" type="checkbox" name="agreement" id="agreement-2" checked>
-            <label class="registr__label-checkbox" for="agreement-2">I agree to the processing of personal data</label>
-            <input class="registr__input-submit button-submit" type="submit" value="Call the measurer">
+            <label class="registr__label-checkbox features__label-checkbox" for="agreement-2">I agree to the processing of personal data</label>
+            <input class="registr__input-submit features__input-submit button-submit" type="submit" value="Call the measurer">
           </fieldset>
         </form>
+        </div>
         <p class="features__sale">Help save 10 - 20% of the cost of materials</p>
       </div>
     </section>
