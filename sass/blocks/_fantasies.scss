@@ -11,10 +11,51 @@
   justify-content: space-between;
 }
 
-.fantasies__article {
+.fantasies__desc {
+  width: 50%;
+}
 
+.fantasies__article {
+  margin-top: 170px;
+  padding-left: 8%;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(27px, 1.4);
+  color: $main-color;
+  text-transform: uppercase;
 }
 
 .fantasies__list {
   @include reset();
+  margin-top: 50px;
+  padding-left: 8%;
 }
+
+.fantasies__item {
+  margin-bottom: 35px;
+}
+
+.fantasies__link {
+  font-family: "ProximaNova",  Arial, sans-serif;
+  @include font(20px);
+  color: $text-color;
+
+  &--select {
+    padding-bottom: 5px;
+    color: $main-color;
+    border-bottom: 1px solid $main-color;
+  }
+}
+
+.fantasies__figure {
+  @include reset;
+  display: flex;
+  width: 50%;
+
+}
+
+.fantasies__first-fig {
+  display: inline-block;
+  margin-top: -50px;
+}
+
+

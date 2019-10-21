@@ -25,6 +25,11 @@
   src: url("../assets/fonts/YesevaOne-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
 html {
   overflow-x: hidden;
 }
@@ -325,10 +330,60 @@ input[type="radio"] {
   justify-content: space-between;
 }
 
+.fantasies__desc {
+  width: 50%;
+}
+
+.fantasies__article {
+  margin-top: 170px;
+  padding-left: 8%;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  font-size: 27px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  color: #E3B873;
+  text-transform: uppercase;
+}
+
 .fantasies__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: 50px;
+  padding-left: 8%;
+}
+
+.fantasies__item {
+  margin-bottom: 35px;
+}
+
+.fantasies__link {
+  font-family: "ProximaNova",  Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.fantasies__link--select {
+  padding-bottom: 5px;
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+}
+
+.fantasies__figure {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 50%;
+}
+
+.fantasies__first-fig {
+  display: inline-block;
+  margin-top: -50px;
 }
 
 .features {
