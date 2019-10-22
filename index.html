@@ -71,7 +71,7 @@
           <button class="slider-switcher__arrow slider-switcher__arrow--left"></button>
           <form class="slider-switcher__form" action="#" method="post">
             <input class="slider-switcher__input-radio" type="radio" name="project" id="first-project" value="first-project" checked>
-            <label class="slider-switcher__label-radio slider-switcher__label-radio--active" for="first-project"></label>
+            <label class="slider-switcher__label-radio" for="first-project"></label>
             <input class="slider-switcher__input-radio" type="radio" name="project" id="second-project" value="second-project">
             <label class="slider-switcher__label-radio" for="second-project"></label>
             <input class="slider-switcher__input-radio" type="radio" name="project" id="third-project" value="third-project">
@@ -291,16 +291,17 @@
         </ul>
     </section>
     <section class="work">
+      <div class="work__wrapper">
       <div class="work__basis">
         <p class="work_rule">How we are working</p>
-        <h2 class="title__article">6 steps to the goal</h2>
+        <h2 class="title__article">6 steps to<br> the goal</h2>
         <div class="work__slide">
           <p class="work__slide-number">1/6</p>
           <h4 class="work__title">Departure for measurements premises</h4>
-          <p class="work__desc">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.</p>
+          <p class="work__desc">After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser&nbsp;-&nbsp;appraiser leaves to measure the room.</p>
           <p class="work__desc">He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
           <div class="slider-switcher">
-            <button class="slider-switcher__arrow arrow_left"></button>
+            <button class="slider-switcher__arrow slider-switcher__arrow--left"></button>
             <form class="slider-switcher__form" action="#" method="post">
               <input class="slider-switcher__input-radio" type="radio" name="project" id="first-work" value="first-work" checked>
               <label class="slider-switcher__label-radio" for="first-work"></label>
@@ -315,7 +316,7 @@
               <input class="slider-switcher__input-radio" type="radio" name="project" id="sixth-work" value="sixth-work">
               <label class="slider-switcher__label-radio" for="sixth-work"></label>
             </form>
-            <button class="slider-switcher__arrow arrow_right"></button>
+            <button class="slider-switcher__arrow slider-switcher__arrow--right"></button>
           </div>
         </div>
       </div>
@@ -342,8 +343,9 @@
             <td class="elem-table__desc">Acceptance of work</td>
           </tr>
         </table>
-        <img src="#" alt="Departure to room measurements" class="work__pict" width="765" height="377">
+        <img src="assets/images/work__pict.jpg" alt="Departure to room measurements" class="work__pict" width="765" height="377">
       </div>
+    </div>
     </section>
     <section class="team">
       <h3 class="title__block">our team</h3>

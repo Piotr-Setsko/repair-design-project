@@ -1,0 +1,54 @@
+.work {
+
+  margin-top: -480px;
+  background-color: $background;
+  background-image: url("../assets/images/work-background.png");
+  z-index: -1;
+}
+
+.work__wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 450px;
+  max-width: 85%;
+}
+
+.work__basis {
+  width: 50%;
+}
+
+.work_rule {
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  @include font(15px, 1.4);
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+.work__slide {
+  margin-top: 70px;
+}
+
+.work__slide-number {
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(18px,1.4);
+  color: $text-color;
+}
+
+.work__title {
+  width: 40%;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(15px,1.5);
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.work__desc {
+  width: 60%;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(15px,1.7);
+  color: $text-color;
+
+  + .work__desc {
+    margin-bottom: 100px;
+  }
+}

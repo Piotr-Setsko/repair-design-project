@@ -7,14 +7,16 @@
 
 .example__pict {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .example__desc {
+  position: relative;
   margin: 0 auto;
   margin-top: -150px;
   width: 85%;
   background-color: $text-color;
+  z-index: 1;
 }
 
 .example__block-list {

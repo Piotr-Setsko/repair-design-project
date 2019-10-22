@@ -271,14 +271,16 @@ input[type="radio"] {
 
 .example__pict {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .example__desc {
+  position: relative;
   margin: 0 auto;
   margin-top: -150px;
   width: 85%;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .example__block-list {
@@ -968,7 +970,7 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-.slider-switcher__label-radio--active {
+.slider-switcher__input-radio:checked + .slider-switcher__label-radio {
   opacity: 1;
 }
 
@@ -1061,4 +1063,70 @@ input[type="radio"] {
 .types {
   margin-top: 150px;
   min-height: 690px;
+}
+
+.work {
+  margin-top: -480px;
+  background-color: #131313;
+  background-image: url("../assets/images/work-background.png");
+  z-index: -1;
+}
+
+.work__wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 450px;
+  max-width: 85%;
+}
+
+.work__basis {
+  width: 50%;
+}
+
+.work_rule {
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.work__slide {
+  margin-top: 70px;
+}
+
+.work__slide-number {
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.work__title {
+  width: 40%;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: normal;
+  color: #E3B873;
+  text-transform: uppercase;
+}
+
+.work__desc {
+  width: 60%;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.work__desc + .work__desc {
+  margin-bottom: 100px;
 }

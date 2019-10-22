@@ -61,8 +61,8 @@
   border-radius: 50%;
   opacity: 0.3;
   cursor: pointer;
+}
 
-  &--active {
-    opacity: 1;
-  }
+.slider-switcher__input-radio:checked + .slider-switcher__label-radio {
+  opacity: 1;
 }
