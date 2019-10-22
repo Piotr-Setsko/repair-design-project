@@ -1,6 +1,5 @@
 .fantasies {
-  margin-top: 300px;
-  min-height: 1018px;
+  margin-top: 250px;
   background-image: url("../assets/images/fantasies-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,11 +11,11 @@
 }
 
 .fantasies__desc {
-  width: 50%;
+  width: 40%;
 }
 
 .fantasies__article {
-  margin-top: 170px;
+  margin-top: 100px;
   padding-left: 8%;
   font-family: "YesevaOne", "Comic Sans", cursive;
   @include font(27px, 1.4);
@@ -31,7 +30,7 @@
 }
 
 .fantasies__item {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .fantasies__link {
@@ -49,13 +48,41 @@
 .fantasies__figure {
   @include reset;
   display: flex;
-  width: 50%;
+  justify-content: flex-end;
+  width: 60%;
 
 }
 
 .fantasies__first-fig {
-  display: inline-block;
   margin-top: -50px;
+
+  .fantasies__pict--small {
+    position: relative;
+    top: 30px;
+  }
+}
+
+.fantasies__pict  {
+  &--large {
+    width: 354px;
+  }
+
+  &--small {
+    width: 354px;
+  }
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+
+}
+
+.fantasies__second-fig {
+  margin-top: -120px;
+
+  .fantasies__pict--large {
+  margin-top: 30px;
+  }
 }
 
 

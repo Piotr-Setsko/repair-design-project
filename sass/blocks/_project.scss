@@ -1,4 +1,8 @@
 .project {
   @include wrapper($desktop-wrapper);
-  min-height: 922px;
+  margin-top: 130px;
+}
+
+.project__list {
+  margin-top: 50px;
 }

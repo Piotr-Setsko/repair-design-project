@@ -58,3 +58,13 @@
   @include font(18px,1.4);
   color: $black-color;
 }
+
+.title__info {
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  width: 60%;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(20px,1.4);
+  color: $black-color;
+}

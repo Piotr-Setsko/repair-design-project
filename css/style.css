@@ -318,8 +318,7 @@ input[type="radio"] {
 }
 
 .fantasies {
-  margin-top: 300px;
-  min-height: 1018px;
+  margin-top: 250px;
   background-image: url("../assets/images/fantasies-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -331,11 +330,11 @@ input[type="radio"] {
 }
 
 .fantasies__desc {
-  width: 50%;
+  width: 40%;
 }
 
 .fantasies__article {
-  margin-top: 170px;
+  margin-top: 100px;
   padding-left: 8%;
   font-family: "YesevaOne", "Comic Sans", cursive;
   font-size: 27px;
@@ -355,7 +354,7 @@ input[type="radio"] {
 }
 
 .fantasies__item {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .fantasies__link {
@@ -378,12 +377,37 @@ input[type="radio"] {
   padding: 0;
   list-style: none;
   display: flex;
-  width: 50%;
+  justify-content: flex-end;
+  width: 60%;
 }
 
 .fantasies__first-fig {
-  display: inline-block;
   margin-top: -50px;
+}
+
+.fantasies__first-fig .fantasies__pict--small {
+  position: relative;
+  top: 30px;
+}
+
+.fantasies__pict--large {
+  width: 354px;
+}
+
+.fantasies__pict--small {
+  width: 354px;
+}
+
+.fantasies__pict:first-child {
+  margin-bottom: 20px;
+}
+
+.fantasies__second-fig {
+  margin-top: -120px;
+}
+
+.fantasies__second-fig .fantasies__pict--large {
+  margin-top: 30px;
 }
 
 .features {
@@ -642,7 +666,11 @@ input[type="radio"] {
 .project {
   margin: 0 auto;
   max-width: 88%;
-  min-height: 922px;
+  margin-top: 130px;
+}
+
+.project__list {
+  margin-top: 50px;
 }
 
 .promo {
@@ -1011,6 +1039,19 @@ input[type="radio"] {
   padding: 20px 0 0 30px;
   font-family: "YesevaOne", "Comic Sans", cursive;
   font-size: 18px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  color: #363636;
+}
+
+.title__info {
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  width: 60%;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 20px;
   line-height: 1.4;
   font-weight: normal;
   font-style: normal;
