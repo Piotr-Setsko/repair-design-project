@@ -1,6 +1,6 @@
 .work {
-
   margin-top: -480px;
+  padding-bottom: 520px;
   background-color: $background;
   background-image: url("../assets/images/work-background.png");
   z-index: -1;
@@ -14,7 +14,7 @@
 }
 
 .work__basis {
-  width: 50%;
+  width: 40%;
 }
 
 .work_rule {
@@ -35,7 +35,7 @@
 }
 
 .work__title {
-  width: 40%;
+  width: 55%;
   font-family: "YesevaOne", "Comic Sans", cursive;
   @include font(15px,1.5);
   color: $main-color;
@@ -43,7 +43,7 @@
 }
 
 .work__desc {
-  width: 60%;
+  width: 80%;
   font-family: "FuturaBookC", Arial, sans-serif;
   @include font(15px,1.7);
   color: $text-color;
@@ -51,4 +51,44 @@
   + .work__desc {
     margin-bottom: 100px;
   }
+}
+
+.work__element {
+  margin-top: 100px;
+}
+
+.work__list {
+  @include reset;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 15%;
+  list-style: none;
+}
+.work__list-link {
+  color: $text-color;
+}
+
+.work__list-item {
+  padding-bottom: 20px;
+  opacity: 30%;
+
+  &--checked {
+    opacity: 1;
+  }
+}
+
+.work__list-number {
+  padding-bottom: 3px;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(15px,1.4);
+  border-bottom: 1px solid $main-color;
+}
+
+.work__list-desc {
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(15px);
+}
+
+.work__pict {
+  padding-top: 20px;
 }

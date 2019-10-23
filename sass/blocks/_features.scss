@@ -13,7 +13,7 @@
 .features__list {
   @include reset;
   margin-top: 120px;
-  margin-left: 410px;
+  margin-left: 50%;
 }
 
 .features__item {
@@ -118,7 +118,7 @@
 .features__input-submit {
   float: right;
   margin-bottom: 20px;
-  padding: 13px 40px;
+  padding: 13px 11%;
   border-radius: 0;
 }
 

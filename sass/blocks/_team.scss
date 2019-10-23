@@ -1,0 +1,100 @@
+.team {
+  margin-top: -500px;
+}
+
+.team .team__title {
+  margin-top: 80px;;
+  color: $text-color;
+
+  &::before {
+    margin-left: 0;
+  }
+
+  &::after {
+    margin-left: -30px;
+  }
+}
+
+.team .title__info {
+  width: 33%;
+  color: $text-color;
+}
+
+.team__person-list {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 75%;
+}
+
+.team__person-photo {
+  position: relative;
+}
+
+.team__person-data {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -90px;
+  width: 80%;
+  background-color: $text-color;
+  z-index: 1;
+}
+
+.team .team__person-name {
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
+  color: #181818;
+}
+
+.team__person-position {
+  margin: 0;
+  margin-top: 5px;
+  text-align: center;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(18px,1.5);
+  color: #959595;
+}
+
+.team__person-exp {
+  margin: 0;
+  margin-top: 25px;
+  padding: 12px 0;
+  text-align: center;
+  @include font(13px,1.5);
+  color: $text-color;
+  text-transform: uppercase;
+  background-color: $main-color;
+}
+
+.team__results {
+  margin: 80px auto 100px;
+  text-align: center;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(20px,1.7);
+  color: $black-color;
+}
+
+
+.team__result-text {
+  margin: 0 auto;
+
+  &:first-child {
+    position: relative;
+    width: 38%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 45%;
+      display: block;
+      width: 55px;
+      height: 2px;
+      background-color: $main-color;
+    }
+  }
+
+  &:last-child {
+    width: 42%;
+  }
+}
