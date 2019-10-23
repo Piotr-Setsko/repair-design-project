@@ -1,0 +1,9 @@
+.client .client__block {
+  &::before {
+    margin-left: 10px;
+  }
+
+  &::after {
+    margin-left: -40px;
+  }
+}

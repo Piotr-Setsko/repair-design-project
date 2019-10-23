@@ -88,6 +88,14 @@ input[type="radio"] {
   box-shadow: none;
 }
 
+.client .client__block::before {
+  margin-left: 10px;
+}
+
+.client .client__block::after {
+  margin-left: -40px;
+}
+
 .complete {
   display: flex;
   justify-content: flex-end;
@@ -1016,6 +1024,7 @@ input[type="radio"] {
   width: 80%;
   background-color: #ffffff;
   z-index: 1;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
 }
 
 .team .team__person-name {
