@@ -7,3 +7,80 @@
     margin-left: -40px;
   }
 }
+
+.client .client__info {
+  width: 27%;
+}
+
+.client .client__list {
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 88%;
+}
+
+.client__item {
+  margin-left: 20px;
+  width: 30%;
+}
+
+.client .client__name {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  padding: 0;
+  width: 60%;
+  display: inline-block;
+}
+
+.client__review {
+  margin: 0;
+  margin-bottom: 5px;
+  width: 93%;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  @include font(15px,1.8);
+  color: #959595;
+}
+
+.client__indicator  {
+  display: flex;
+  margin-top: 50px;
+  margin-left:-20px;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(17px,1.4);
+  color: $text-color;
+}
+
+.client__area,
+.client__days {
+  display: flex;
+  background-color: $main-color;
+  padding: 15px 20px 15px;
+  box-shadow: 5px 5px 20px rgba(227,184,115, 0.5);
+
+
+  &::before {
+    content: "";
+    display: block;
+    margin: -3px;
+    margin-right: 10px;
+    width: 33px;
+    height: 32px;
+  }
+}
+
+.client__area {
+  margin-right: 1px;
+
+  &::before {
+    background-image: url("../assets/images/client-submit-1.svg");
+  }
+}
+
+
+.client__days {
+
+
+  &::before {
+    background-image: url("../assets/images/client-submit-2.svg");
+  }
+}

@@ -96,6 +96,84 @@ input[type="radio"] {
   margin-left: -40px;
 }
 
+.client .client__info {
+  width: 27%;
+}
+
+.client .client__list {
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 88%;
+}
+
+.client__item {
+  margin-left: 20px;
+  width: 30%;
+}
+
+.client .client__name {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  padding: 0;
+  width: 60%;
+  display: inline-block;
+}
+
+.client__review {
+  margin: 0;
+  margin-bottom: 5px;
+  width: 93%;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: normal;
+  font-style: normal;
+  color: #959595;
+}
+
+.client__indicator {
+  display: flex;
+  margin-top: 50px;
+  margin-left: -20px;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.client__area,
+.client__days {
+  display: flex;
+  background-color: #E3B873;
+  padding: 15px 20px 15px;
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.client__area::before,
+.client__days::before {
+  content: "";
+  display: block;
+  margin: -3px;
+  margin-right: 10px;
+  width: 33px;
+  height: 32px;
+}
+
+.client__area {
+  margin-right: 1px;
+}
+
+.client__area::before {
+  background-image: url("../assets/images/client-submit-1.svg");
+}
+
+.client__days::before {
+  background-image: url("../assets/images/client-submit-2.svg");
+}
+
 .complete {
   display: flex;
   justify-content: flex-end;
@@ -813,6 +891,13 @@ input[type="radio"] {
   transform: rotate(45deg);
 }
 
+.question {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 50%;
+  background-color: #131313;
+}
+
 .registr__element {
   position: relative;
   display: inline-block;
@@ -1011,6 +1096,36 @@ input[type="radio"] {
   margin: 0 auto;
   margin-top: 80px;
   width: 75%;
+}
+
+.team__person-item {
+  position: relative;
+}
+
+.team__person-item::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  width: 70px;
+  height: 70px;
+  background-color: #E3B873;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 20px rgba(227, 184, 115, 0.5);
+  z-index: 2;
+}
+
+.team__idea::before {
+  background-image: url("../assets/images/team-symbol-1.svg");
+}
+
+.team__design::before {
+  background-image: url("../assets/images/team-symbol-2.svg");
+}
+
+.team__foreman::before {
+  background-image: url("../assets/images/team-symbol-3.svg");
 }
 
 .team__person-photo {

@@ -26,6 +26,36 @@
   width: 75%;
 }
 
+.team__person-item {
+  position: relative;
+}
+
+.team__person-item::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  width: 70px;
+  height: 70px;
+  background-color: $main-color;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 20px rgba(227,184,115, 0.5);
+  z-index: 2;
+}
+
+.team__idea::before {
+  background-image: url("../assets/images/team-symbol-1.svg");
+}
+
+.team__design::before {
+  background-image: url("../assets/images/team-symbol-2.svg");
+}
+
+.team__foreman::before {
+  background-image: url("../assets/images/team-symbol-3.svg");
+}
+
 .team__person-photo {
   position: relative;
 }
