@@ -2,12 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 83px;
 }
 
 .main-nav__logo {
+  padding: 32px 0;
   font-family: "FuturaDemiC", Arial, sans-serif;
   @include font(14px);
   color: #E3B873;
   text-transform: uppercase;
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav__logo {
+    padding: 22px 0;
+    @include mobile-font();
+  }
 }

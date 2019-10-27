@@ -1,6 +1,63 @@
 .question {
+  position: relative;
   margin: 0 auto;
   margin-top: 80px;
   width: 50%;
   background-color: $background;
+  background-image: url("../assets/images/question-background.png");
+  z-index: 5;
+}
+
+.question .question__legend {
+  padding-top: 40px;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(20px,1.4);
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+.question__input-text {
+  margin-bottom: 50px;
+  width: 100%;
+  font-family: "FuturaMedium", Arial, sans-serif;
+  @include font(18px, 1.4);
+  color: $text-color;
+  border: none;
+  border-bottom-color: rgba(250,250,250, 0.15);
+
+  &::placeholder {
+    font-family: "FuturaMedium", Arial, sans-serif;
+    @include font(18px, 1.4);
+    color: $text-color;
+  }
+}
+
+.question__input-wrapper {
+  display: inline-block;
+  width: 45%;
+
+  &+ .question__input-wrapper {
+    float: right;
+  }
+}
+
+
+.question__label-text {
+  color: $text-color;
+}
+
+.question__label-checkbox {
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 40px;
+  color: $text-color;
+}
+
+.question__input-submit {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 13px 14%;
+  z-index: 5;
 }

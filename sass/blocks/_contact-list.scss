@@ -1,18 +1,21 @@
 .contact-list {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   @include reset();
 }
 
 .contact-list__link--phone {
   font-family: "FuturaDemiC", Arial, sans-serif;
-  @include font(1vw);
+  @include font(14px);
   color: #E3B873;
   border-bottom: 1px solid #E3B873;
 }
 
 .contact-list__item {
   &:first-child{
-    margin-top: 10px;
+    //margin-top: 10px;
+
   }
 
   &:last-child {
@@ -25,4 +28,15 @@
   text-transform: uppercase;
 }
 
+@media (max-width: $mobile-width) {
+  .contact-list__link--phone {
+    @include mobile-font();
+    color: $text-color;
+    border: none;
+  }
+
+  .contact-list__link {
+    display: none;
+  }
+}
 

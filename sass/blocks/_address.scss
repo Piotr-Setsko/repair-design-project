@@ -1,0 +1,58 @@
+.address {
+  margin-top:-200px;
+  padding-bottom: 65px;
+  background-color: $background;
+  background-image: url("../assets/images/address-background.png");
+}
+
+.address__wrapper {
+   padding-top: 250px;
+
+}
+
+.address__data {
+  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 40%;
+  font-family: "YesevaOne", "Comic Sans", cursive;
+  @include font(20px,1.4);
+  color: $main-color;
+}
+
+.address__social {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.address__social-link {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: $main-color;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mail-link {
+  margin-right: 15px;
+  background-image: url("../assets/images/address-img-1.svg");
+}
+
+.inst-link {
+  background-image: url("../assets/images/address-img-2.svg");
+}
+
+.address__map {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.address__image {
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+}
+

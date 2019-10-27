@@ -409,34 +409,41 @@
       <form class="question__form registr__form" action="#" method="post">
         <fieldset class="question__field registr__field">
           <legend class="question__legend registr__legend">have any questions?</legend>
-          <input class="registr__input-text" type="text" name="user-name" id="user-name-3" placeholder="What is your name:">
-          <label class="registr__label-text" for="user-name-3">Name</label>
-          <input class="registr__input-text" type="text" name="phone-number" id="phone-number-3" placeholder="Your phone number:">
-          <label class="registr__label-text" for="phone-number-3">Phone</label>
-          <input class="registr__input-text" type="text" name="user-mail" id="question" placeholder="I want to know:">
-          <label class="registr__label-text" for="user-mail-3">Question</label>
-          <input type="registr__input-checkbox" name="agreement" id="agreement-3" checked>
-          <label class="registr__label-checkbox" for="agreement-3">I agree to the processing of personal data</label>
-          <input class="registr__input-submit button-submit" type="submit" value="Submit">
+          <div class="question__input-wrapper">
+          <label class="registr__label-text question__label-text" for="user-name-3">Name</label>
+          <input class="registr__input-text question__input-text" type="text" name="user-name" id="user-name-3" placeholder="What is your name:">
+          </div>
+          <div class="question__input-wrapper">
+          <label class="registr__label-text question__label-text" for="phone-number-3">Phone</label>
+          <input class="registr__input-text question__input-text" type="text" name="phone-number" id="phone-number-3" placeholder="Your phone number:">
+          </div>
+          <label class="registr__label-text question__label-text" for="user-mail-3">Question</label>
+          <input class="registr__input-text question__input-text" type="text" name="user-mail" id="question" placeholder="I want to know:">
+          <input class="registr__input-checkbox" type="checkbox" name="agreement" id="agreement-3" checked>
+          <label class="registr__label-checkbox question__label-checkbox" for="agreement-3">I agree to the processing of personal data</label>
+          <input class="registr__input-submit question__input-submit button-submit" type="submit" value="Submit">
         </fieldset>
       </form>
     </section>
     <section class="address">
-      <p class="adress__data">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</p>
-      <ul class="adress__social">
-        <li class="adress__social-item">
-          <a href="#" class="adress__social-link mail-link"></a>
+      <div class="address__wrapper">
+      <p class="address__data">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</p>
+      <ul class="address__social">
+        <li class="address__social-item">
+          <a href="#" class="address__social-link mail-link"></a>
         </li>
-        <li class="adress__social-item">
-          <a href="#" class="adress__social-link inst-link"></a>
+        <li class="address__social-item">
+          <a href="#" class="address__social-link inst-link"></a>
         </li>
       </ul>
-      <div class="adress__map">
-        <img src="#" alt="Rostov-on-Don, Nansen St., 239 Shopping Center Decorum" class="adress__image" width="925" height="465">
+      <div class="address__map">
+        <img src="assets/images/address-map.jpg" alt="Rostov-on-Don, Nansen St., 239 Shopping Center Decorum" class="address__image" width="925" height="465">
       </div>
+    </div>
     </section>
   </main>
-  <footer>
+  <footer class="page__footer">
+    <div class="page__wrapper">
     <nav class="main-nav">
       <a href="#" class="main-nav__logo">IC "Repair Design Project"</a>
       <ul class="main-nav__list site-list">
@@ -448,10 +455,11 @@
         <li class="site-list__item"><a href="#" class="site-list__link">CONTACTS</a></li>
       </ul>
       <ul class="main-nav__list contact-list">
-        <li class="conact-list__item"><a href="#" class="contack-list__link--phone">+7 (928) 768-32-39</a></li>
-        <li class="conact-list__item"><a href="#" class="contack-list__link button-submit">Request a call</a></li>
+        <li class="contact-list__item"><a href="#" class="contact-list__link--phone">+7 (928) 768-32-39</a></li>
+        <li class="contact-list__item"><a href="#" class="contact-list__link button-submit">Request a call</a></li>
       </ul>
     </nav>
+    </div>
   </footer>
 </body>
 </html>

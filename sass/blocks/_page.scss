@@ -5,3 +5,21 @@
 .page__header {
   background-color: #131313;
 }
+
+@media (max-width: $mobile-width) {
+  .page__wrapper {
+    @include wrapper($mobile-wrapper);
+  }
+
+  .page__header {
+    width: $mobile-width;
+  }
+
+  .page__main {
+    width: $mobile-width;
+  }
+}
+
+.page__footer {
+  background-color: #131313;
+}

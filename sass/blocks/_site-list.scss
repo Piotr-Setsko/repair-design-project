@@ -1,18 +1,24 @@
-@media (min-width: $mobile-width) {
+
 .site-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   @include reset;
   min-width: 40%;
 }
 
 .site-list__link {
   font-family: "FuturaBookC", Arial, sans-serif;
-  @include font(1vw);
+  @include font(14px);
   color: #ffffff;
 
   &--select {
     color: #E3B873;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .site-list {
+    display: none;
+  }
 }
