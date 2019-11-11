@@ -66,3 +66,9 @@
 .slider-switcher__input-radio:checked + .slider-switcher__label-radio {
   opacity: 1;
 }
+
+@media (max-width: $mobile-width) {
+  .slider-switcher {
+    display: none;
+  }
+}

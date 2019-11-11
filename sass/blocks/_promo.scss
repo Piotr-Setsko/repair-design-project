@@ -67,7 +67,7 @@
 }
 
 .promo__link {
-  padding: 4.5vh 2.5vw;
+  padding: 17px 33px;
 }
 
 .promo__down {
@@ -115,6 +115,7 @@
 @media (max-width: 375px) {
   .promo__wrapper {
     padding-top: 85px;
+    padding-bottom: 60px;
     width: 100%;
     background-position-x: center;
   }
@@ -137,7 +138,13 @@
   }
 
   .promo__link {
-    display: block;
+    margin: 0;
+    margin-top: 30px;
     width: 100%;
+    text-align: center;
+  }
+
+  .promo__down {
+    display: none;
   }
 }

@@ -16,3 +16,9 @@
     box-shadow: none;
   }
 }
+
+@media (max-width: 375px) {
+  .button-submit {
+    box-sizing: border-box;
+  }
+}

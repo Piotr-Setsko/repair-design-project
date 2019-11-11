@@ -4,7 +4,7 @@
 }
 
 .control__title {
-  margin-top: -325px;
+  margin-top: -300px;
   color: $text-color;
 }
 
@@ -71,5 +71,11 @@
 
 .control__label-checkbox {
   margin-top: 30px;
+}
+
+@media (max-width: $mobile-width) {
+  .control__title {
+    margin-top: 0;
+  }
 }
 

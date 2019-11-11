@@ -1,15 +1,15 @@
 .complete {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr 1fr 350px;
   margin-top: -50px;
   padding-top: 100px;
   background-color: $background;
-  min-height: 952px;
   background-image: url("../assets/images/complete-background.png");
 }
 
 .complete__slider:first-child {
-  width: 32%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 70px;
 }
@@ -20,6 +20,9 @@
   color: $text-color;
 }
 
-.complete__slider:last-child {
-  width: 59%;
+@media (max-width: $mobile-width) {
+  .complete {
+    display: block;
+  }
 }
+
