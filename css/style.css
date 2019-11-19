@@ -268,6 +268,23 @@ input[type="radio"] {
 @media (max-width: 375px) {
   .complete {
     display: block;
+    margin: 0;
+    padding-top: 50px;
+    background-image: none;
+    background-color: #252525;
+  }
+  .complete__slider,
+  .complete__slider:first-child {
+    margin-top: 0;
+    width: 340px;
+  }
+  .complete__desc {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    width: 310px;
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
 
@@ -397,8 +414,43 @@ input[type="radio"] {
 }
 
 @media (max-width: 375px) {
+  .control {
+    background-color: #252525;
+  }
+  .control__wrapper {
+    width: 340px;
+  }
   .control__title {
     margin-top: 0;
+    padding-top: 20px;
+  }
+  .control__video {
+    box-shadow: none;
+    height: auto;
+  }
+  .control__desc {
+    margin-top: 55px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #ffffff;
+  }
+  .control__desc::before {
+    height: 2px;
+  }
+  .control__form {
+    margin-top: 50px;
+  }
+  .control__input-text {
+    margin-bottom: 70px;
+    width: 100%;
+    border-bottom-color: #ffffff;
+  }
+  .control__input-text::placeholder {
+    color: #ffffff;
+  }
+  .control__label-text {
+    color: rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -432,6 +484,22 @@ input[type="radio"] {
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
+}
+
+@media (max-width: 375px) {
+  .data-table__wrap {
+    width: 340px;
+  }
+  .data-table__name {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .data-table__text {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 
 .example__list {
@@ -785,6 +853,10 @@ input[type="radio"] {
   background-color: #131313;
 }
 
+.page__footer {
+  background-color: #131313;
+}
+
 @media (max-width: 375px) {
   .page__wrapper {
     margin: 0 auto;
@@ -792,14 +864,11 @@ input[type="radio"] {
   }
   .page__header {
     width: 375px;
+    background-color: #252525;
   }
   .page__main {
     width: 375px;
   }
-}
-
-.page__footer {
-  background-color: #131313;
 }
 
 .pict-slider {
@@ -865,6 +934,7 @@ input[type="radio"] {
   width: 50px;
   height: 50px;
   background-color: #E3B873;
+  border: none;
   border-radius: 50%;
 }
 
@@ -877,12 +947,54 @@ input[type="radio"] {
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 5px;
+}
+
+.pict-slider__button--left {
+  display: none;
+}
+
+.pict-slider__button--right::before {
   transform: rotate(-45deg);
 }
 
 @media (max-width: 375px) {
+  .pict-slider {
+    width: 340px;
+    margin: 0 auto;
+  }
   .pict-slider__text-list {
     display: none;
+  }
+  .pict-slider__img-item:first-child {
+    display: none;
+  }
+  .pict-slider__img-item:last-child {
+    width: 100%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  .pict-slider__img-item:last-child > .pict-slider__img {
+    position: static;
+  }
+  .pict-slider__button {
+    width: 36px;
+    height: 36px;
+  }
+  .pict-slider__button--right {
+    top: 40%;
+    left: 84%;
+  }
+  .pict-slider__button--left {
+    display: block;
+    top: 40%;
+    left: 4%;
+    z-index: 5;
+  }
+  .pict-slider__button--left::before {
+    transform: rotate(135deg);
+  }
+  .pict-slider__button::before {
+    top: 35%;
+    left: 35%;
   }
 }
 
@@ -1214,6 +1326,13 @@ input[type="radio"] {
   color: #ffffff;
 }
 
+@media (max-width: 375px) {
+  .registr__element {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 .site-list {
   display: flex;
   justify-content: space-between;
@@ -1542,6 +1661,31 @@ input[type="radio"] {
   font-weight: normal;
   font-style: normal;
   color: #363636;
+}
+
+@media (max-width: 375px) {
+  .title__article {
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  .title__article::after {
+    display: none;
+  }
+  .title__block {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  .title__block::before {
+    margin-left: 40px;
+    height: 1.4px;
+  }
+  .title__block::after {
+    margin-left: -70px;
+    height: 1.4px;
+  }
 }
 
 .types {

@@ -74,8 +74,51 @@
 }
 
 @media (max-width: $mobile-width) {
+  .control {
+    background-color: $background-mobile;
+  }
+
+  .control__wrapper {
+    width: $mobile-wrapper;
+  }
+
   .control__title {
     margin-top: 0;
+    padding-top: 20px;
+  }
+
+  .control__video {
+    box-shadow: none;
+    height: auto;
+  }
+
+  .control__desc {
+    margin-top: 55px;
+    width: 100%;
+    @include mobile-font(14px, 1.7);
+    color: $text-color;
+
+    &::before {
+      height: 2px;
+    }
+  }
+
+  .control__form  {
+    margin-top: 50px;
+  }
+
+  .control__input-text {
+    margin-bottom: 70px;
+    width: 100%;
+    border-bottom-color: $text-color;
+
+    &::placeholder {
+      color: $text-color;
+    }
+  }
+
+  .control__label-text {
+    color: rgba(255, 255, 255, 0.5)
   }
 }
 

@@ -23,3 +23,19 @@
   @include font(15px,1.4);
   color: $text-color;
 }
+
+@media (max-width: $mobile-width) {
+  .data-table__wrap {
+    width: $mobile-wrapper;
+  }
+
+  .data-table__name {
+    @include mobile-font(14px, 1.4);
+  }
+
+  .data-table__text {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    @include mobile-font(14px, 1.4);
+  }
+}

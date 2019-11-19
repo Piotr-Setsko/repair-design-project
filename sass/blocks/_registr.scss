@@ -67,3 +67,10 @@
   @include font(20px);
   color: $text-color;
 }
+
+@media (max-width: 375px) {
+  .registr__element {
+    margin: 0;
+    width: 100%;
+  }
+}

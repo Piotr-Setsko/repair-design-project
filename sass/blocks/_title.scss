@@ -68,3 +68,31 @@
   @include font(20px,1.4);
   color: $black-color;
 }
+
+@media (max-width: 375px) {
+  .title__article {
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    @include mobile-font(22px, 1.4);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .title__block {
+    @include mobile-font(22px, 1.4);
+
+
+    &::before {
+      margin-left: 40px;
+      height: 1.4px;
+    }
+
+    &::after {
+      margin-left: -70px;
+      height: 1.4px;
+    }
+  }
+}

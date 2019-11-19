@@ -23,6 +23,25 @@
 @media (max-width: $mobile-width) {
   .complete {
     display: block;
+    margin: 0;
+    padding-top: 50px;
+    background-image: none;
+    background-color: $background-mobile;
   }
+
+  .complete__slider,
+  .complete__slider:first-child {
+    margin-top: 0;
+    width: $mobile-wrapper;
+  }
+
+  .complete__desc {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    width: 310px;
+    @include mobile-font(14px, 1.6);
+  }
+
 }
 

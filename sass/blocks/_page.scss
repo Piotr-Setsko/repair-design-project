@@ -3,7 +3,11 @@
 }
 
 .page__header {
-  background-color: #131313;
+  background-color: $background;
+}
+
+.page__footer {
+  background-color: $background;
 }
 
 @media (max-width: $mobile-width) {
@@ -13,6 +17,7 @@
 
   .page__header {
     width: $mobile-width;
+    background-color: $background-mobile;
   }
 
   .page__main {
@@ -20,6 +25,3 @@
   }
 }
 
-.page__footer {
-  background-color: #131313;
-}
