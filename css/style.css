@@ -573,6 +573,26 @@ input[type="radio"] {
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
 
+@media (max-width: 375px) {
+  .example__list {
+    flex-direction: column;
+  }
+  .example__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .example__desc {
+    margin-left: 0;
+  }
+  .example__block-item {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .example__block-link {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+}
+
 .fantasies {
   margin-top: 250px;
   background-image: url("../assets/images/fantasies-background.jpg");
@@ -1698,11 +1718,23 @@ input[type="radio"] {
     margin-left: -70px;
     height: 1.4px;
   }
+  .title__equal {
+    font-size: 15px;
+    line-height: 1.2;
+  }
 }
 
 .types {
   margin-top: 150px;
   min-height: 690px;
+}
+
+@media (max-width: 375px) {
+  .types {
+    background-color: #ffffff;
+    margin-top: -30px;
+    padding-top: 60px;
+  }
 }
 
 .work {

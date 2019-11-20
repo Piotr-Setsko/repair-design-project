@@ -29,7 +29,7 @@
 .example__block-item {
   padding-bottom: 5px;
   font-family: "FuturaBookC", Arial, sans-serif;
-  @include font(15px,1.6);
+  @include font(15px, 1.6);
   color: #959595;
 }
 
@@ -40,9 +40,31 @@
   text-align: center;
   width: 70%;
   font-family: "YesevaOne", "Comic Sans", cursive;
-  @include font(18px,1.4);
+  @include font(18px, 1.4);
   color: $text-color;
   text-transform: uppercase;
   background-color: $main-color;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, .30);
+}
+
+@media (max-width: $mobile-width) {
+  .example__list {
+    flex-direction: column;
+  }
+
+  .example__item:not(:last-child){
+    margin-bottom: 60px;
+  }
+
+  .example__desc {
+    margin-left: 0;
+  }
+
+  .example__block-item {
+    @include mobile-font(13px, 1.6);
+  }
+
+  .example__block-link {
+    @include mobile-font(15px, 1.4);
+  }
 }

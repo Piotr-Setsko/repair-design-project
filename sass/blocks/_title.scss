@@ -95,4 +95,8 @@
       height: 1.4px;
     }
   }
+
+  .title__equal {
+    @include mobile-font(15px);
+  }
 }
