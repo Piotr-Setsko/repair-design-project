@@ -331,7 +331,6 @@ input[type="radio"] {
 .control__wrapper {
   margin: 0 auto;
   width: 61%;
-  min-height: 955px;
 }
 
 .control__title {
@@ -439,18 +438,31 @@ input[type="radio"] {
     height: 2px;
   }
   .control__form {
+    display: flex;
+    flex-direction: column;
     margin-top: 50px;
   }
   .control__input-text {
-    margin-bottom: 70px;
     width: 100%;
     border-bottom-color: #ffffff;
   }
   .control__input-text::placeholder {
     color: #ffffff;
   }
+  .control__input-text[name="user-name"] {
+    margin-bottom: 70px;
+  }
   .control__label-text {
     color: rgba(255, 255, 255, 0.5);
+  }
+  .control__label-checkbox {
+    margin-left: 10px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .control__input-submit {
+    order: 1;
+    margin-top: 70px;
   }
 }
 
