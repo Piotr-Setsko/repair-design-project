@@ -528,12 +528,18 @@ input[type="radio"] {
   z-index: 0;
 }
 
+.example__desc-wrapper {
+  margin: 0 auto;
+  width: 85%;
+}
+
 .example__desc {
   position: relative;
-  margin: 0 auto;
   margin-top: -150px;
-  width: 85%;
+  padding-bottom: 50px;
+  width: 100%;
   background-color: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
   z-index: 1;
 }
 
@@ -557,8 +563,9 @@ input[type="radio"] {
 }
 
 .example__block-link {
+  position: relative;
   display: block;
-  margin-top: 20px;
+  margin-top: -30px;
   padding: 15px 0;
   text-align: center;
   width: 70%;
@@ -571,6 +578,7 @@ input[type="radio"] {
   text-transform: uppercase;
   background-color: #E3B873;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  z-index: 2;
 }
 
 @media (max-width: 375px) {
@@ -580,7 +588,7 @@ input[type="radio"] {
   .example__item:not(:last-child) {
     margin-bottom: 60px;
   }
-  .example__desc {
+  .example__desc-wrapper {
     margin-left: 0;
   }
   .example__block-item {
@@ -666,6 +674,10 @@ input[type="radio"] {
   top: 30px;
 }
 
+.fantasies__first-pict {
+  display: none;
+}
+
 .fantasies__pict--large {
   width: 354px;
 }
@@ -684,6 +696,48 @@ input[type="radio"] {
 
 .fantasies__second-fig .fantasies__pict--large {
   margin-top: 30px;
+}
+
+@media (max-width: 375px) {
+  .fantasies {
+    margin-top: 0;
+    background-image: none;
+  }
+  .fantasies__wrapper {
+    display: block;
+  }
+  .fantasies__desc {
+    width: 100%;
+  }
+  .fantasies__article {
+    margin: 0 auto;
+    margin-top: 55px;
+    padding: 0;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  .fantasies__first-pict {
+    position: relative;
+  }
+  .fantasies__slider {
+    display: block;
+  }
+  .fantasies__figure {
+    width: 100%;
+  }
+  .fantasies__first-pict {
+    display: block;
+  }
+  .fantasies__first-fig {
+    margin-top: 30px;
+  }
+  .fantasies__pict {
+    display: none;
+  }
+  .fantasies__list {
+    display: none;
+  }
 }
 
 .features {
@@ -849,6 +903,12 @@ input[type="radio"] {
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 50%;
+}
+
+@media (max-width: 375px) {
+  .features {
+    display: none;
+  }
 }
 
 .main-nav {
@@ -1042,6 +1102,15 @@ input[type="radio"] {
 
 .project__button {
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
+}
+
+@media (max-width: 375px) {
+  .project {
+    margin-top: -120px;
+    padding-top: 150px;
+    width: 375px;
+    background-color: #252525;
+  }
 }
 
 .promo {

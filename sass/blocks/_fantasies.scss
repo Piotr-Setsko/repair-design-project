@@ -62,6 +62,10 @@
   }
 }
 
+.fantasies__first-pict {
+  display: none;
+}
+
 .fantasies__pict  {
   &--large {
     width: 354px;
@@ -74,7 +78,6 @@
   &:first-child {
     margin-bottom: 20px;
   }
-
 }
 
 .fantasies__second-fig {
@@ -85,4 +88,53 @@
   }
 }
 
+@media (max-width: 375px) {
+  .fantasies {
+    margin-top: 0;
+    background-image: none;
+  }
 
+  .fantasies__wrapper {
+    display: block;
+  }
+
+  .fantasies__desc {
+    width: 100%;
+  }
+
+  .fantasies__article {
+    margin: 0 auto;
+    margin-top: 55px;
+    padding: 0;
+    text-align: center;
+    @include mobile-font(22px, 1.4);
+  }
+
+  .fantasies__first-pict {
+    position: relative;
+  }
+
+  .fantasies__slider {
+    display: block;
+  }
+
+  .fantasies__figure {
+    width: 100%;
+  }
+
+  .fantasies__first-pict {
+    display: block;
+  }
+
+  .fantasies__first-fig {
+    margin-top: 30px;
+  }
+
+  .fantasies__pict {
+    display: none;
+  }
+
+  .fantasies__list {
+    display: none;
+  }
+}
