@@ -581,6 +581,10 @@ input[type="radio"] {
   z-index: 2;
 }
 
+.example__mobile {
+  display: none;
+}
+
 @media (max-width: 375px) {
   .example__list {
     flex-direction: column;
@@ -1110,6 +1114,15 @@ input[type="radio"] {
     padding-top: 150px;
     width: 375px;
     background-color: #252525;
+  }
+  .project > * > h3 {
+    color: #ffffff;
+  }
+  .project__button {
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  }
+  .project__hidden {
+    display: none;
   }
 }
 
@@ -1678,6 +1691,12 @@ input[type="radio"] {
   width: 42%;
 }
 
+@media (max-width: 375px) {
+  .team {
+    margin-top: 0;
+  }
+}
+
 .title__article {
   position: relative;
   margin: 0;
@@ -1790,6 +1809,12 @@ input[type="radio"] {
   .title__equal {
     font-size: 15px;
     line-height: 1.2;
+  }
+  .title__info {
+    width: 85%;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.4;
   }
 }
 
@@ -1920,4 +1945,10 @@ input[type="radio"] {
 
 .work__pict {
   padding-top: 20px;
+}
+
+@media (max-width: 375px) {
+  .work {
+    display: none;
+  }
 }

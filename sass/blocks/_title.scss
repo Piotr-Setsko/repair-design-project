@@ -99,4 +99,10 @@
   .title__equal {
     @include mobile-font(15px);
   }
+
+  .title__info {
+    width: 85%;
+    color: $text-color;
+    @include mobile-font(15px, 1.4);
+  }
 }

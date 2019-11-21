@@ -17,5 +17,17 @@
     padding-top: 150px;
     width: $mobile-width;
     background-color: $background-mobile;
+
+    & > * > h3 {
+      color: $text-color;;
+    }
+  }
+
+  .project__button {
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, .30)
+  }
+
+  .project__hidden {
+    display: none;
   }
 }

@@ -129,3 +129,9 @@
     width: 42%;
   }
 }
+
+@media (max-width: 375px) {
+  .team {
+    margin-top: 0;
+  }
+}

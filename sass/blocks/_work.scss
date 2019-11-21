@@ -92,3 +92,9 @@
 .work__pict {
   padding-top: 20px;
 }
+
+@media (max-width: 375px) {
+  .work {
+    display: none;
+  }
+}
