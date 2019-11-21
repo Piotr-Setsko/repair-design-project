@@ -15,7 +15,7 @@
   }
 }
 
-.team .title__info {
+.team > * > .team__info {
   width: 33%;
   color: $text-color;
 }
@@ -132,6 +132,30 @@
 
 @media (max-width: 375px) {
   .team {
+    width: $mobile-width;
     margin-top: 0;
+    padding-top: 70px;
+    background-color: $background-mobile;
   }
+
+  .team .team__title {
+    margin: 0;
+  }
+
+  .team > * >.team__info {
+    width: 100%;
+  }
+
+  .team__person-item:not(:last-child) {
+    margin-bottom: 100px;
+  }
+
+  .team__person-item:last-child {
+    margin-bottom: 40px;
+  }
+
+  .team__results {
+    display: none;
+  }
+
 }

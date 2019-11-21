@@ -61,3 +61,12 @@
   padding: 13px 14%;
   z-index: 5;
 }
+
+@media (max-width: 375px) {
+  .question {
+    margin: 0;
+    width: $mobile-width;
+    background-image: none;
+    background-color: $background-mobile;
+  }
+}

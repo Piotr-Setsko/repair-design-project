@@ -84,3 +84,9 @@
     background-image: url("../assets/images/client-submit-2.svg");
   }
 }
+
+@media (max-width: 375px) {
+  .client {
+    display: none;
+  }
+}
