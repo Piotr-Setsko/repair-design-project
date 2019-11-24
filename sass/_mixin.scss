@@ -4,7 +4,15 @@
   font-weight: $weight;
   font-style: $style;
 }
+/*
+@mixin vw($size) {
+  font-size: (100vw * $size / 1440px);
+}
 
+@mixin line($size, $line-height) {
+  line-height: (100vw * $size * $line-height / 1440px);
+}
+*/
 @mixin mobile-font($size: 12px, $line-height: 1.2) {
   font-size: $size;
   line-height: $line-height;

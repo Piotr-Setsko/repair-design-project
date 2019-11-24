@@ -1,10 +1,12 @@
 
 .site-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  @include reset;
-  min-width: 40%;
+}
+
+.site-list__item {
+  margin-right: 5%;
 }
 
 .site-list__link {
@@ -17,8 +19,20 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .site-list {
+    display: none;
+  }
+
+  .site-list__item {
+    padding: 5px 0;
+    margin-right: 20px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .site-list {
     display: none;
   }
 }
+

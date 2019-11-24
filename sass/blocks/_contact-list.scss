@@ -1,8 +1,10 @@
 .contact-list {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
   @include reset();
+  flex-grow: 1; ;
 }
 
 .contact-list__link--phone {
@@ -13,19 +15,17 @@
 }
 
 .contact-list__item {
-  &:first-child{
-    //margin-top: 10px;
-
-  }
-
-  &:last-child {
-    margin-left: 4vw;
+  &:first-child {
+    margin-right: 10%;
   }
 }
 
 .contact-list__link {
   padding: 11px 33px;
   text-transform: uppercase;
+}
+
+@media (max-width: $tablet-width) {
 }
 
 @media (max-width: $mobile-width) {
@@ -39,4 +39,6 @@
     display: none;
   }
 }
+
+
 

@@ -7,12 +7,15 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>IC "Repair Design Project"</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=dbd05c5a-7b11-4c97-9fe7-0686bf3697c0" type="text/javascript"></script>
 </head>
 <body class="page">
   <header class="page__header">
     <div class="page__wrapper">
     <nav class="main-nav">
       <a class="main-nav__logo">IC "Repair Design Project"</a>
+      <ul class="main-nav__tablet">
+        <li class="main-nav__tablet-item"><a href="#" class="main-nav__tablet-link">menu</a>
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a href="#" class="site-list__link site-list__link--select">HOME</a></li>
         <li class="site-list__item"><a href="#" class="site-list__link">PROJECTS</a></li>
@@ -21,6 +24,8 @@
         <li class="site-list__item"><a href="#" class="site-list__link">REVIEWS</a></li>
         <li class="site-list__item"><a href="#" class="site-list__link">CONTACTS</a></li>
       </ul>
+    </li>
+    </ul>
       <ul class="main-nav__list contact-list">
         <li class="contact-list__item"><a href="#" class="contact-list__link--phone">+7 (928) 768-32-39</a></li>
         <li class="contact-list__item"><a href="#" class="contact-list__link button-submit">Request a call</a></li>
@@ -452,7 +457,7 @@
     </section>
     <section class="address">
       <div class="address__wrapper">
-      <p class="address__data">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</p>
+      <p class="address__data">Rostov-on-Don, Nansen&nbsp;St.,239 Shopping Center Decorum Tel +7 (928) 768 32 29</p>
       <ul class="address__social">
         <li class="address__social-item">
           <a href="#" class="address__social-link mail-link"></a>
@@ -461,9 +466,7 @@
           <a href="#" class="address__social-link inst-link"></a>
         </li>
       </ul>
-      <div class="address__map">
-        <img src="assets/images/address-map.jpg" alt="Rostov-on-Don, Nansen St., 239 Shopping Center Decorum" class="address__image" width="925" height="465">
-      </div>
+      <div id="map" class="adress__map"></div>
     </div>
     </section>
   </main>
@@ -486,5 +489,24 @@
     </nav>
     </div>
   </footer>
+  <script>
+    var myMap;
+    ymaps.ready(init);
+    function init () {
+      myMap = new ymaps.Map('map', {
+        center: [47.244,39.723], // Москва
+        zoom: 14
+      }, {
+        searchControlProvider: 'yandex#search'
+      });
+      myMap.geoObjects
+        .add(new ymaps.Placemark([47.244,39.723], {
+        iconCaption: 'ТЦ "Декорум"'
+        },{
+          preset: 'islands#dotIcon',
+          iconColor: '#735184'
+      }))
+    }
+  </script>
 </body>
 </html>

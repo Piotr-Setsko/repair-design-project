@@ -39,13 +39,18 @@
 }
 
 .pict-slider__img-item:last-child {
-  display: block;
+  display: inline-block;
   overflow-x: hidden;
   width: 15%;
+  height: 100%;
+
 
 
   & > .pict-slider__img {
-  position: absolute;
+    max-width: inherit;
+    position:relative;
+    margin-left: -135px;
+   
   }
 }
 
