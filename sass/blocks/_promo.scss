@@ -70,6 +70,11 @@
   padding: 17px 33px;
 }
 
+.promo__link:last-child {
+  margin-left: 0;
+  margin-top: 10px;
+}
+
 .promo__down {
   margin-top: -50px;
   width: 247px;
@@ -131,11 +136,6 @@
   .promo__desc {
     font-size: 20px;
     width: 100%;
-  }
-
-  .promo__link:last-child {
-    margin-left: 0;
-    margin-top: 10px;
   }
 }
 

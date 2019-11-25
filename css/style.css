@@ -1003,7 +1003,7 @@ input[type="radio"] {
   .main-nav__tablet-item > .site-list {
     display: none;
     list-style: none;
-    margin-left: 50px;
+    margin-left: 15%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -1326,6 +1326,11 @@ input[type="radio"] {
   padding: 17px 33px;
 }
 
+.promo__link:last-child {
+  margin-left: 0;
+  margin-top: 10px;
+}
+
 .promo__down {
   margin-top: -50px;
   width: 247px;
@@ -1386,10 +1391,6 @@ input[type="radio"] {
   .promo__desc {
     font-size: 20px;
     width: 100%;
-  }
-  .promo__link:last-child {
-    margin-left: 0;
-    margin-top: 10px;
   }
 }
 
