@@ -68,7 +68,13 @@
   color: $text-color;
 }
 
-@media (max-width: 375px) {
+@media (max-width: $tablet-width) {
+  .registr__element {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
   .registr__element {
     margin: 0;
     width: 100%;

@@ -64,12 +64,27 @@
 
 .control__input-submit {
   position: relative;
+  margin-top: 10px;
   top: -5px;
   padding: 13px 70px;
 }
 
 .control__label-checkbox {
   margin-top: 30px;
+}
+
+@media (max-width: $tablet-width) {
+  .control__wrapper {
+    @include wrapper(90%);
+  }
+
+  .control__title {
+    margin-top: -320px;
+  }
+
+  .control__desc {
+    width: 90%;
+  }
 }
 
 @media (max-width: $mobile-width) {
