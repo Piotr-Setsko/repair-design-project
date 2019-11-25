@@ -2,12 +2,18 @@
   display: flex;
   margin-top: 120px;
   min-height: 726px;
+  overflow: hidden;
 }
 
 .features__circle {
-  width: 60%;
-  background-image: url("../assets/images/features-background.png");
-  background-repeat: no-repeat;
+  //width: 50%;
+  //background-image: url("../assets/images/features-background.png");
+  //background-repeat: no-repeat;
+  border-radius: 50%;
+  background:
+    linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #E3B873 100%) border-box;
+  border: 3px solid transparent;
 }
 
 .features__list {
@@ -37,6 +43,9 @@
     color: $text-color;
     background-color: $main-color;
     border-radius: 50%;
+    border-width:  7px;
+    border-style: solid;
+    border-color: white;
   }
 }
 
@@ -147,7 +156,13 @@
   border-radius: 50%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: $tablet-width) {
+  .features__discount {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
   .features {
     display: none;
   }
