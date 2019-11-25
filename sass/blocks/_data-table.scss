@@ -24,6 +24,15 @@
   color: $text-color;
 }
 
+@media (max-width: $tablet-width) {
+  .data-table__wrap {
+    margin-top: 20px;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    width: 90%;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .data-table__wrap {
     width: $mobile-wrapper;

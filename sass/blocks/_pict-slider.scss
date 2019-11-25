@@ -11,14 +11,18 @@
 .pict-slider__text-list {
   display: flex;
   @include reset;
-  justify-content: space-between;
-  width: 70%;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.pict-slider__text-item {
+  margin-right: 3%;
 }
 
 .pict-slider__text-link {
-  padding-bottom: 8px;
+  padding-bottom: 5px;
   font-family: "YesevaOne", "Comic Sans", cursive;
-  @include font(14px,1.4);
+  @include font(14px,1.7);
   color: $text-color;
   opacity: 0.3;
   text-transform: uppercase;
@@ -32,7 +36,7 @@
 
 .pict-slider__img-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   @include reset;
   margin-top: 45px;
   position: relative;
@@ -43,20 +47,21 @@
   overflow-x: hidden;
   width: 15%;
   height: 100%;
+  margin-left: 7%;
 
 
 
   & > .pict-slider__img {
-    max-width: inherit;
+    max-width: 50vw;
     position:relative;
     margin-left: -135px;
-   
+
   }
 }
 
 .pict-slider__button {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 90%;
   width: 50px;
   height: 50px;
@@ -84,6 +89,47 @@
   transform: rotate(-45deg);
 }
 
+@media (max-width: $tablet-width) {
+  .pict-slider__text-item:not(:first-child) {
+    display: none;
+  }
+
+  .pict-slider__img-item {
+    &:first-child {
+      width: 100%;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .pict-slider__button {
+    width: 40px;
+    height: 40px;
+
+    &--left {
+      display: block;
+      left: 4%;
+      z-index: 5;
+    }
+
+    &--right {
+      left: 84%;
+    }
+  }
+
+  .pict-slider__button--left::before {
+    transform: rotate(135deg);
+  }
+
+  .pict-slider__button::before {
+    top: 35%;
+    left: 35%;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .pict-slider {
     width: $mobile-wrapper;
@@ -98,11 +144,16 @@
     &:first-child {
       display: none;
     }
+
     &:last-child {
+      display: block;
+      margin-left: 0;
       width: 100%;
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 
       > .pict-slider__img {
+        margin: 0;
+        max-width: 100%;
         position: static;
       }
     }

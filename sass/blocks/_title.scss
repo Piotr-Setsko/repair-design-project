@@ -69,7 +69,18 @@
   color: $black-color;
 }
 
-@media (max-width: 375px) {
+@media (max-width: $tablet-width) {
+  .title__article {
+    @include mobile-font(24px, 1.4);
+
+    &::after {
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: $mobile-width) {
   .title__article {
     margin: 0 auto;
     width: 150px;
