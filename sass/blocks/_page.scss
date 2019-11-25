@@ -10,6 +10,13 @@
   background-color: $background;
 }
 
+@media (max-width: $tablet-width) {
+  .page__wrapper {
+    width: 90%;
+  }
+}
+
+
 @media (max-width: $mobile-width) {
   .page__wrapper {
     @include wrapper($mobile-wrapper);
