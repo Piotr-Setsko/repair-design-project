@@ -624,7 +624,7 @@ input[type="radio"] {
 
 .example__desc {
   position: relative;
-  margin-top: -150px;
+  margin-top: -40%;
   padding-bottom: 50px;
   width: 100%;
   background-color: #ffffff;
@@ -744,7 +744,7 @@ input[type="radio"] {
 }
 
 .fantasies {
-  margin-top: 250px;
+  margin-top: 16vw;
   background-image: url("../assets/images/fantasies-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -805,10 +805,12 @@ input[type="radio"] {
   display: flex;
   justify-content: flex-end;
   width: 60%;
+  margin: auto 0;
 }
 
 .fantasies__first-fig {
   margin-top: -50px;
+  margin-right: 5%;
 }
 
 .fantasies__first-fig .fantasies__pict--small {
@@ -840,7 +842,7 @@ input[type="radio"] {
   margin-top: 30px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .fantasies {
     margin-top: 0;
     background-image: none;
@@ -1088,6 +1090,10 @@ input[type="radio"] {
   .features__discount {
     width: 70%;
     min-width: 360px;
+  }
+  .features__sale {
+    width: 60%;
+    margin-left: 35%;
   }
 }
 

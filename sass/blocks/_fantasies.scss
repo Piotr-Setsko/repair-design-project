@@ -1,5 +1,5 @@
 .fantasies {
-  margin-top: 250px;
+  margin-top: 16vw;
   background-image: url("../assets/images/fantasies-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,11 +50,12 @@
   display: flex;
   justify-content: flex-end;
   width: 60%;
-
+  margin: auto 0;
 }
 
 .fantasies__first-fig {
   margin-top: -50px;
+  margin-right: 5%;
 
   .fantasies__pict--small {
     position: relative;
@@ -88,7 +89,8 @@
   }
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: $tablet-width) {
   .fantasies {
     margin-top: 0;
     background-image: none;
