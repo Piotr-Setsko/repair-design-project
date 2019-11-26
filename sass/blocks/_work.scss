@@ -94,7 +94,17 @@
 }
 
 @media (max-width: $tablet-width) {
-  
+  .work__wrapper {
+    flex-direction: column;
+  }
+
+  .work__basis {
+    width: 90%;
+  }
+
+  .work__list {
+    display: none;
+  }
 }
 
 @media (max-width: $mobile-width) {

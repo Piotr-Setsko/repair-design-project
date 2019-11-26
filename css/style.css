@@ -2371,6 +2371,18 @@ input[type="radio"] {
   padding-top: 20px;
 }
 
+@media (max-width: 768px) {
+  .work__wrapper {
+    flex-direction: column;
+  }
+  .work__basis {
+    width: 90%;
+  }
+  .work__list {
+    display: none;
+  }
+}
+
 @media (max-width: 375px) {
   .work {
     display: none;
