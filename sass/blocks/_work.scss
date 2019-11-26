@@ -94,6 +94,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .work {
+    padding-bottom: 300px;
+  }
+
   .work__wrapper {
     flex-direction: column;
   }

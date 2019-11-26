@@ -130,7 +130,43 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: $tablet-width) {
+  .team {
+    margin-top: -270px;
+  }
+
+  .team > * > .team__info {
+    width: 70%;
+    color: $text-color;
+  }
+
+  .team__person-data {
+    margin-top: auto;
+  }
+
+  .team__person-item {
+    display: flex;
+  }
+
+  .team__person-item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .team__person-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .team__result-text {
+    &:first-child {
+      width: 70%;
+    }
+    &:last-child{
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
   .team {
     width: $mobile-width;
     margin-top: 0;
@@ -146,6 +182,10 @@
     width: 100%;
   }
 
+  .team__person-item {
+    display: block;
+  }
+
   .team__person-item:not(:last-child) {
     margin-bottom: 100px;
   }
@@ -154,8 +194,16 @@
     margin-bottom: 40px;
   }
 
+  .team__person-data {
+    margin-top: -90px;
+  }
+
   .team__results {
     display: none;
+  }
+
+  .team__person-exp {
+    width: 100%;
   }
 
 }
