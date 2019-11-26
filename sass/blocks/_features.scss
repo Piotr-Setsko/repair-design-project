@@ -1,15 +1,23 @@
 .features {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 120px;
   min-height: 726px;
   overflow: hidden;
 }
 
-.features__circle {
+.features__circle-wrapper {
   position: relative;
-  width: 36%;
-  height: 46vw;
+  margin-right: 12%;
+  width: 600px;
+}
+
+.features__circle {
+  margin-left: -105px;
+  position: relative;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
   background:
     linear-gradient(#fff,#fff) padding-box,
@@ -18,8 +26,8 @@
 }
 
 .features__background {
-  margin-top: -55px;
-  width: 125%;
+  left: 105px;
+  margin-top: -50px;
   height: 700px;
   position: relative;
   background-image: url("../assets/images/features-background.png");
@@ -27,16 +35,16 @@
 }
 
 .features__list {
-  width: 15%;
   position: absolute;
   @include reset;
-  margin-top: 120px;
-  margin-left: 50%;
+  top: 50px;
+  left: 400px;
 }
 
 .features__item {
   position: absolute;
   font-family: "FuturaMedium", Arial, sans-serif;
+  width: 400px;
   @include font(18px);
   color: $black-color;
 
@@ -62,8 +70,8 @@
 }
 
 .first-item{
- top: -40px;
- left: -215px;
+ top: -25px;
+ left: 0;
 
 
   &::before{
@@ -72,8 +80,8 @@
 }
 
 .second-item {
-  margin-left: 80px;
-  margin-bottom: 140px;
+  margin-left: 115px;
+  top: 145px;
 
   &::before{
     content: "02";
@@ -82,8 +90,8 @@
 }
 
 .third-item{
-  margin-left: 105px;
-  margin-bottom: 130px;
+  margin-left: 120px;
+  top: 315px;
 
   &::before{
     content: "03";
@@ -93,6 +101,7 @@
 
 .four-item {
   margin-left: 35px;
+  top: 445px;
 
   &::before{
     content: "04";
@@ -101,9 +110,10 @@
 }
 
 .features__discount {
-  margin-right: 5%;
-  margin-top: 100px;
-  width: 35%;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: calc(100%*0.4);
+  min-width: 450px;
 }
 
 .features__wrapper {
@@ -149,6 +159,7 @@
   position: relative;
   margin: 0 auto;
   margin-top: 40px;
+  margin-bottom: 20px;
   width: 50%;
   font-family: "FuturaDemiC", Arial, sans-serif;
   @include font(20px);
@@ -171,8 +182,17 @@
 }
 
 @media (max-width: $tablet-width) {
-  .features__discount {
+  .features {
+    margin-top: 20px;
+  }
+
+  .features__circle-wrapper {
     display: none;
+  }
+
+  .features__discount {
+    width: 70%;
+    min-width: 360px;
   }
 }
 
