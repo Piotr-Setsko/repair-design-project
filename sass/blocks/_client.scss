@@ -76,16 +76,33 @@
   }
 }
 
-
 .client__days {
-
 
   &::before {
     background-image: url("../assets/images/client-submit-2.svg");
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: $tablet-width) {
+  .client .client__info {
+    width: 70%;
+  }
+
+  .client__item {
+    width: 90%;
+  }
+
+  .client__review {
+    width: 100%;
+  }
+
+  .client__indicator  {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: $mobile-width) {
   .client {
     display: none;
   }
