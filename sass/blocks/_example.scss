@@ -71,6 +71,7 @@
 
   .example__desc {
     margin-top: 0px;
+    height: 100%;
   }
 
   .example__desc-wrapper {
@@ -139,6 +140,9 @@
 
   .example__block-link {
     @include mobile-font(15px, 1.4);
+  }
 
+  .example__button {
+    width: 70%;
   }
 }
