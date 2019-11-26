@@ -708,6 +708,9 @@ input[type="radio"] {
   .example__block-link {
     font-size: 16px;
   }
+  .example__mobile {
+    display: inline;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1410,12 +1413,31 @@ input[type="radio"] {
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
 }
 
+@media (max-width: 768px) {
+  .project {
+    margin-top: 50px;
+    background-color: #131313;
+    background-image: url("../assets/images/work-background.png");
+  }
+  .project > * > h3 {
+    padding-top: 30px;
+    color: #ffffff;
+  }
+  .project > * > .project__info {
+    color: #ffffff;
+  }
+  .project__hidden {
+    display: none;
+  }
+}
+
 @media (max-width: 375px) {
   .project {
     margin-top: -120px;
     padding-top: 150px;
     width: 375px;
     background-color: #252525;
+    background-image: none;
   }
   .project > * > h3 {
     color: #ffffff;

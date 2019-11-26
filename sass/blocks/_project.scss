@@ -10,15 +10,38 @@
   box-shadow: 5px 5px 10px rgba(227, 184, 115, .10)
 }
 
-@media (max-width: 375px) {
+@media (max-width: $tablet-width) {
+  .project {
+    margin-top: 50px;
+    background-color: $background;
+    background-image: url("../assets/images/work-background.png");
+  }
+
+
+  .project > * > h3 {
+    padding-top: 30px;
+    color: $text-color;
+  }
+
+  .project > * > .project__info {
+    color: $text-color;
+  }
+
+  .project__hidden {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
   .project {
     margin-top: -120px;
     padding-top: 150px;
     width: $mobile-width;
     background-color: $background-mobile;
+    background-image: none;
 
     & > * > h3 {
-      color: $text-color;;
+      color: $text-color;
     }
   }
 
