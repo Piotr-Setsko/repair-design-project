@@ -3,6 +3,7 @@
   margin: 0 auto;
   margin-top: 80px;
   width: 50%;
+  min-width: 450px;
   background-color: $background;
   background-image: url("../assets/images/question-background.png");
   z-index: 5;
@@ -41,7 +42,6 @@
   }
 }
 
-
 .question__label-text {
   color: $text-color;
 }
@@ -62,10 +62,23 @@
   z-index: 5;
 }
 
-@media (max-width: 375px) {
+@media (max-width: $tablet-width) {
+  .question {
+    margin-top: 0;
+    width: 70%;
+    min-width: $mobile-width;;
+  }
+
+  .question__form > .question__field {
+    width: 90%;
+  }
+}
+
+@media (max-width: $mobile-width) {
   .question {
     margin: 0;
     width: $mobile-width;
+    min-width: $mobile-width;
     background-image: none;
     background-color: $background-mobile;
   }

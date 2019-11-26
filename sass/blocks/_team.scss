@@ -140,6 +140,10 @@
     color: $text-color;
   }
 
+  .team__person-list {
+    width: 90%;
+  }
+
   .team__person-data {
     margin-top: auto;
   }
@@ -180,6 +184,10 @@
 
   .team > * >.team__info {
     width: 100%;
+  }
+
+  .team__person-list {
+    width: 75%;
   }
 
   .team__person-item {

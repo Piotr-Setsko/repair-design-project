@@ -7,7 +7,6 @@
 
 .address__wrapper {
    padding-top: 250px;
-
 }
 
 .address__data {
@@ -62,7 +61,18 @@
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 375px) {
+@media (max-width: $tablet-width) {
+  .address__data {
+    width: 90%;
+  }
+
+  #map {
+    width: 90%;
+    height: 300px;
+  }
+}
+
+@media (max-width: $mobile-width) {
   .address {
     margin: 0;
     padding-bottom: 20px;

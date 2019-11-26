@@ -141,6 +141,16 @@ input[type="radio"] {
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 768px) {
+  .address__data {
+    width: 90%;
+  }
+  #map {
+    width: 90%;
+    height: 300px;
+  }
+}
+
 @media (max-width: 375px) {
   .address {
     margin: 0;
@@ -1656,6 +1666,7 @@ input[type="radio"] {
   margin: 0 auto;
   margin-top: 80px;
   width: 50%;
+  min-width: 450px;
   background-color: #131313;
   background-image: url("../assets/images/question-background.png");
   z-index: 5;
@@ -1723,10 +1734,22 @@ input[type="radio"] {
   z-index: 5;
 }
 
+@media (max-width: 768px) {
+  .question {
+    margin-top: 0;
+    width: 70%;
+    min-width: 375px;
+  }
+  .question__form > .question__field {
+    width: 90%;
+  }
+}
+
 @media (max-width: 375px) {
   .question {
     margin: 0;
     width: 375px;
+    min-width: 375px;
     background-image: none;
     background-color: #252525;
   }
@@ -2105,6 +2128,9 @@ input[type="radio"] {
     width: 70%;
     color: #ffffff;
   }
+  .team__person-list {
+    width: 90%;
+  }
   .team__person-data {
     margin-top: auto;
   }
@@ -2137,6 +2163,9 @@ input[type="radio"] {
   }
   .team > * > .team__info {
     width: 100%;
+  }
+  .team__person-list {
+    width: 75%;
   }
   .team__person-item {
     display: block;
