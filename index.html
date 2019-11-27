@@ -112,11 +112,11 @@
       <form class="control__form registr__form" action="#" method="post">
         <div class="registr__element">
         <label class="registr__label-text control__label-text" for="user-name">Name</label>
-        <input class="registr__input-text control__input-text" type="text" name="user-name" id="user-name" placeholder="What is your name:">
+        <input class="registr__input-text control__input-text" type="text" name="user-name" id="user-name" placeholder="What is your name:" required>
         </div>
         <div class="registr__element">
         <label class="registr__label-text control__label-text" for="phone-number">Phone</label>
-        <input class="registr__input-text control__input-text" type="text" name="phone-number" id="phone-number" placeholder="Your phone number:">
+        <input class="registr__input-text control__input-text" type="tel" name="phone-number" id="phone-number" placeholder="Your phone number:" pattern="[0-9]{9}" required>
         </div>
         <input class="registr__input-submit control__input-submit button-submit" type="submit" value="Submit">
         <div class="registr__element-checkbox">
