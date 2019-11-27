@@ -206,11 +206,11 @@
           <fieldset class="registr__field">
             <legend class="registr__legend">Leave a request for free departure of the measurer</legend>
             <label class="registr__label-text features__label-text" for="user-name-2">Name</label>
-            <input class="registr__input-text features__input-text" type="text" name="user-name" id="user-name-2" placeholder="What is your name:">
+            <input class="registr__input-text features__input-text" type="text" name="user-name" id="user-name-2" placeholder="What is your name:" required>
             <label class="registr__label-text features__label-text" for="phone-number-2">Phone</label>
-            <input class="registr__input-text features__input-text" type="text" name="phone-number" id="phone-number-2" placeholder="Your phone number:">
+            <input class="registr__input-text features__input-text" type="tel" name="phone-number" id="phone-number-2" placeholder="Your phone number:" pattern="[0-9]{9}" required>
             <label class="registr__label-text features__label-text" for="user-mail">Email</label>
-            <input class="registr__input-text features__input-text" type="text" name="user-mail" id="user-mail" placeholder="Your email">
+            <input class="registr__input-text features__input-text" type="email" name="user-mail" id="user-mail" placeholder="Your email" required>
             <input class="registr__input-checkbox" type="checkbox" name="agreement" id="agreement-2" checked>
             <label class="registr__label-checkbox features__label-checkbox" for="agreement-2">I agree to the processing of personal data</label>
             <input class="registr__input-submit features__input-submit button-submit" type="submit" value="Call the measurer">
