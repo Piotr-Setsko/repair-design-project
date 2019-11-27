@@ -3,7 +3,7 @@
 }
 
 .control__title {
-  margin-top: -300px;
+  margin-top: -320px;
   color: $text-color;
 }
 
@@ -12,6 +12,7 @@
   margin: 0 auto;
   margin-top: 30px;
   width: 100%;
+  height: 32vw;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
@@ -75,7 +76,7 @@
 
 @media (max-width: $tablet-width) {
   .control__wrapper {
-    @include wrapper(90%);
+    @include wrapper(75%);
   }
 
   .control__title {
@@ -84,6 +85,10 @@
 
   .control__desc {
     width: 90%;
+  }
+
+  .control__video {
+    min-height: 180px;
   }
 }
 
