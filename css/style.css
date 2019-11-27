@@ -101,12 +101,24 @@ input[type="radio"] {
   text-transform: uppercase;
 }
 
+.address__data-link {
+  color: #E3B873;
+}
+
+.address__data-link:hover {
+  color: #ffffff;
+}
+
 .address__social {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   padding: 0;
   list-style: none;
+}
+
+.address__social-item:hover .address__social-link {
+  background-color: #e2961d;
 }
 
 .address__social-link {

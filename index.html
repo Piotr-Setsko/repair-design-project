@@ -444,14 +444,14 @@
           <legend class="question__legend registr__legend"><a name="question">have any questions?</a></legend>
           <div class="question__input-wrapper">
           <label class="registr__label-text question__label-text" for="user-name-3">Name</label>
-          <input class="registr__input-text question__input-text" type="text" name="user-name" id="user-name-3" placeholder="What is your name:">
+          <input class="registr__input-text question__input-text" type="text" name="user-name" id="user-name-3" placeholder="What is your name:" required>
           </div>
           <div class="question__input-wrapper">
           <label class="registr__label-text question__label-text" for="phone-number-3">Phone</label>
-          <input class="registr__input-text question__input-text" type="text" name="phone-number" id="phone-number-3" placeholder="Your phone number:">
+          <input class="registr__input-text question__input-text" type="tel" name="phone-number" id="phone-number-3" placeholder="Your phone number:" pattern="[0-9]{9}" required>
           </div>
           <label class="registr__label-text question__label-text" for="user-mail-3">Question</label>
-          <input class="registr__input-text question__input-text" type="text" name="user-mail" id="question" placeholder="I want to know:">
+          <input class="registr__input-text question__input-text" type="text" name="user-mail" id="question" placeholder="I want to know:" required>
           <input class="registr__input-checkbox" type="checkbox" name="agreement" id="agreement-3" checked>
           <label class="registr__label-checkbox question__label-checkbox" for="agreement-3">I agree to the processing of personal data</label>
           <input class="registr__input-submit question__input-submit button-submit" type="submit" value="Submit">
@@ -460,7 +460,7 @@
     </section>
     <section class="address">
       <div class="address__wrapper">
-      <p class="address__data"><a name="CONTACTS">Rostov-on-Don, Nansen&nbsp;St.,239 Shopping Center Decorum Tel&nbsp;+7&nbsp;(928)&nbsp;768&nbsp;32&nbsp;29</a></p>
+      <p class="address__data"><a name="CONTACTS">Rostov-on-Don, Nansen&nbsp;St.,239 Shopping Center Decorum Tel&nbsp;</a><a class="address__data-link" href="tel">+7&nbsp;(928)&nbsp;768&nbsp;32&nbsp;29</a></p>
       <ul class="address__social">
         <li class="address__social-item">
           <a href="#" class="address__social-link mail-link"></a>
