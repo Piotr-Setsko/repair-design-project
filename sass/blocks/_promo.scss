@@ -105,8 +105,8 @@
   color: $main-color;
 
   &::before {
-    background-color: $main-color;
-    opacity: 0.7;
+    background-color: $hover-color;
+
   }
 
   &::after {

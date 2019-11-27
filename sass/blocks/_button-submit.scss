@@ -19,7 +19,7 @@
 }
 
 .button-submit:hover {
-  background-color: rgb(226, 150, 29);
+  background-color: $hover-color;
 }
 
 .button-submit--transp:hover {
@@ -29,7 +29,7 @@
 
 .button-submit:active {
   opacity: 0.5;
-  color: #dddcdc;
+  color: grey;
 }
 
 
