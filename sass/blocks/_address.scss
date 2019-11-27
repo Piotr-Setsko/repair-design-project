@@ -17,6 +17,8 @@
   font-family: "YesevaOne", "Comic Sans", cursive;
   @include font(20px,1.4);
   color: $main-color;
+  max-width: 600px;
+  text-transform: uppercase;
 }
 
 .address__social {

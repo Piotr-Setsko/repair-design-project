@@ -3,10 +3,20 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-grow: 3;
+  list-style: none;
 }
 
 .site-list__item {
   margin-right: 5%;
+}
+
+.site-list:hover .site-list__link--select {
+  color: $text-color;
+}
+
+.site-list__item:hover .site-list__link {
+  color: #E3B873;
 }
 
 .site-list__link {
