@@ -206,6 +206,20 @@ input[type="radio"] {
   box-shadow: none;
 }
 
+.button-submit:hover {
+  background-color: #e2961d;
+}
+
+.button-submit--transp:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.button-submit:active {
+  opacity: 0.5;
+  color: #dddcdc;
+}
+
 @media (max-width: 375px) {
   .button-submit {
     box-sizing: border-box;
@@ -400,6 +414,15 @@ input[type="radio"] {
 
 .contact-list__item:first-child {
   margin-right: 10%;
+}
+
+.contact-list__item:hover .contact-list__link--phone {
+  color: #ffffff;
+}
+
+.contact-list__item:active .contact-list__link--phone {
+  opacity: 0.5;
+  border-bottom: 1px solid #ffffff;
 }
 
 .contact-list__link {

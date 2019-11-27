@@ -11,14 +11,29 @@
   white-space: nowrap;
 
   &--transp {
-    margin-left: 20px;;
+    margin-left: 20px;
     border: 1px solid #ffffff;
     background-color: transparent;
     box-shadow: none;
   }
 }
 
-@media (max-width: 375px) {
+.button-submit:hover {
+  background-color: rgb(226, 150, 29);
+}
+
+.button-submit--transp:hover {
+  background-color: $text-color;
+  color: rgb(0, 0, 0);
+}
+
+.button-submit:active {
+  opacity: 0.5;
+  color: #dddcdc;
+}
+
+
+@media (max-width: $mobile-width) {
   .button-submit {
     box-sizing: border-box;
   }

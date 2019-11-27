@@ -18,6 +18,14 @@
   &:first-child {
     margin-right: 10%;
   }
+  &:hover .contact-list__link--phone {
+    color: $text-color;
+  }
+
+  &:active .contact-list__link--phone{
+    opacity: 0.5;
+    border-bottom: 1px solid $text-color;
+  }
 }
 
 .contact-list__link {
