@@ -20,6 +20,13 @@
   color: $main-color;
 }
 
+.promo__inst-link:hover {
+  color: $text-color;
+  &::after {
+    background-color: $text-color;
+  }
+}
+
 .promo__inst-link::after {
   content: "";
   display: inline-block;
@@ -92,6 +99,19 @@
   @include font(14px,1.4);
   color: $text-color;
   text-transform: uppercase;
+}
+
+.promo__down-link:hover {
+  color: $main-color;
+
+  &::before {
+    background-color: $main-color;
+    opacity: 0.7;
+  }
+
+  &::after {
+    border-color: $text-color;
+  }
 }
 
 .promo__down-link::before {

@@ -1215,6 +1215,12 @@ input[type="radio"] {
     text-align: center;
     text-transform: uppercase;
   }
+  .main-nav__tablet-item:hover .main-nav__tablet-link {
+    color: #ffffff;
+  }
+  .main-nav__tablet-item:hover .main-nav__tablet-link::after {
+    border-color: #ffffff;
+  }
   .main-nav__tablet-link::after {
     content: "";
     margin-left: 10px;
@@ -1526,6 +1532,14 @@ input[type="radio"] {
   color: #E3B873;
 }
 
+.promo__inst-link:hover {
+  color: #ffffff;
+}
+
+.promo__inst-link:hover::after {
+  background-color: #ffffff;
+}
+
 .promo__inst-link::after {
   content: "";
   display: inline-block;
@@ -1609,6 +1623,19 @@ input[type="radio"] {
   font-style: normal;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.promo__down-link:hover {
+  color: #E3B873;
+}
+
+.promo__down-link:hover::before {
+  background-color: #E3B873;
+  opacity: 0.7;
+}
+
+.promo__down-link:hover::after {
+  border-color: #ffffff;
 }
 
 .promo__down-link::before {

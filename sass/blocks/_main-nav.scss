@@ -47,6 +47,14 @@
     text-transform: uppercase;
   }
 
+  .main-nav__tablet-item:hover .main-nav__tablet-link{
+    color: $text-color;
+  }
+
+  .main-nav__tablet-item:hover .main-nav__tablet-link::after{
+    border-color: $text-color;
+  }
+
   .main-nav__tablet-link::after {
     content: "";
     margin-left: 10px;
