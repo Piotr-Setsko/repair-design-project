@@ -857,6 +857,10 @@ input[type="radio"] {
   margin-bottom: 30px;
 }
 
+.fantasies__item:hover .fantasies__link {
+  color: #E3B873;
+}
+
 .fantasies__link {
   font-family: "ProximaNova",  Arial, sans-serif;
   font-size: 20px;
@@ -2521,6 +2525,10 @@ input[type="radio"] {
 
 .work__list-link {
   color: #ffffff;
+}
+
+.work__list-item:not(:first-child):hover {
+  opacity: 60%;
 }
 
 .work__list-item {

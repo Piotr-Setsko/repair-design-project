@@ -33,6 +33,10 @@
   margin-bottom: 30px;
 }
 
+.fantasies__item:hover .fantasies__link {
+  color: $main-color;
+}
+
 .fantasies__link {
   font-family: "ProximaNova",  Arial, sans-serif;
   @include font(20px);
